@@ -81,6 +81,7 @@ nav {
 header {
     font-size: 45px ;
     color: #B23850
+    vertical-align: middle;
 }
 
 header img {
@@ -92,5 +93,7 @@ header img {
 footer {
     font-size: 15px ;
     color: #C4DBF6
+    vertical-align: middle;
+
   
 }
