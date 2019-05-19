@@ -1,6 +1,8 @@
 
-body {
+*  { margin: 0; box-sizing: border-box; }
+body, p {
     font-size: 14px;
+    line-height: 32px;
     font-family: 'Roboto Mono', 'Segoe UI', Arial, sans-serif, monospace;
     color: #000000;
 }
@@ -10,8 +12,6 @@ body {
     width: 60px;
     float: left;
 
-}   
-
 .siteTitle {
     font-size: 35px ;
     text-align: center;
@@ -20,20 +20,15 @@ body {
 
 .motto {
     font-style: italic;
-
-}
-
 h1 {
     font-size: 35px ;
     text-align: center;
-    font-family: 'Roboto Mono', sans-serif;
     color: #E7E3D4; ;
 }
 
 h2 {
     font-size: 28px;
     text-align: center;
-    font-family: 'Roboto Mono', sans-serif;
     border-bottom: 1px solid #bbb;
     color: #E7E3D4;
 }
@@ -41,42 +36,26 @@ h2 {
 h3 {
     font-size: 21px;
     text-align: center;
-    font-family: 'Roboto Mono', sans-serif;
     border-bottom: 1px solid #bbb;
     color: #E7E3D4;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: #C4DBF6;
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 800px ;
+    
 }
 
-li {
-    display: block;
-    color: #000000;
+header, footer, footer a {
     text-align: center;
-    padding: 10px 16px;
- 
-}
-
-li a:hover {
-    background-color: #8590AA;
-    color: #B23850;
-}
-
-li a.active {
-    background-color: #8590AA;
-    color: #3B8BEB;
+    background-color: DodgerBlue ;
 }
 
 nav {
     font-size: 35px ;
-    color: #000000
+    color: #3B8BEB
 }
-
 
 header {
     font-size: 45px ;
@@ -92,5 +71,4 @@ header img {
 footer {
     font-size: 15px ;
     color: #C4DBF6
-  
 }
