@@ -1,0 +1,74 @@
+
+*  { margin: 0; box-sizing: border-box; }
+body, p {
+    font-size: 14px;
+    line-height: 32px;
+    font-family: 'Roboto Mono', 'Segoe UI', Arial, sans-serif, monospace;
+    color: #000000;
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+    float: left;
+
+.siteTitle {
+    font-size: 35px ;
+    text-align: center;
+    color: #E7E3D4; ;
+}
+
+.motto {
+    font-style: italic;
+h1 {
+    font-size: 35px ;
+    text-align: center;
+    color: #E7E3D4; ;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+    color: #E7E3D4;
+}
+
+h3 {
+    font-size: 21px;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+    color: #E7E3D4;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 800px ;
+    
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: DodgerBlue ;
+}
+
+nav {
+    font-size: 35px ;
+    color: #3B8BEB
+}
+
+header {
+    font-size: 45px ;
+    color: #B23850
+}
+
+header img {
+    width: 230px;
+    height: auto;
+    float: left;
+}
+
+footer {
+    font-size: 15px ;
+    color: #C4DBF6
+}
