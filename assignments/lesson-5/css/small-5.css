@@ -1,4 +1,5 @@
 
+
 body {
     font-size: 14px;
     font-family: 'Roboto Mono', 'Segoe UI', Arial, sans-serif, monospace;
@@ -8,18 +9,19 @@ body {
 .icon {
     height: 60px;
     width: 60px;
-    float: left;
+    float: none;
 
 }   
 
 .siteTitle {
     font-size: 35px ;
-    text-align: center;
+    text-align: justify;
     color: #E7E3D4; ;
 }
 
 .motto {
     font-style: italic;
+    text-align: center;
 
 }
 
@@ -52,6 +54,7 @@ ul {
     padding: 0;
     width: 100%;
     background-color: #C4DBF6;
+    text-align: center;
 }
 
 li {
@@ -77,11 +80,27 @@ nav {
     color: #000000
 }
 
+.hide {
+    display: none;  
+  }
+
+.hide1 {
+    display: none;  
+  }
+
 
 header {
     font-size: 45px ;
     color: #B23850
     vertical-align: middle;
+}
+
+article, section {
+    text-align: center;
+}
+
+main img {
+        float: auto;
 }
 
 header img {
@@ -94,6 +113,8 @@ footer {
     font-size: 15px ;
     color: #C4DBF6
     vertical-align: middle;
+    text-align: center;
 
   
 }
+
