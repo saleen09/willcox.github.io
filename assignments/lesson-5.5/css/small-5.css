@@ -15,21 +15,23 @@ body {
 
 .siteTitle {
     font-size: 35px ;
-    text-align: justify;
-    color: #E7E3D4; ;
-}
-
-.motto {
-    font-style: italic;
     text-align: center;
 
+ 
+}
+
+header {
+    font-size: 45px;
+    color: #B23850;
+    vertical-align: middle;
 }
 
 h1 {
-    font-size: 35px ;
+    font-size: 45px ;
     text-align: center;
     font-family: 'Roboto Mono', sans-serif;
-    color: #E7E3D4; ;
+    color:  #B23850;
+ 
 }
 
 h2 {
@@ -37,15 +39,15 @@ h2 {
     text-align: center;
     font-family: 'Roboto Mono', sans-serif;
     border-bottom: 1px solid #bbb;
-    color: #E7E3D4;
+    color:  #B23850;
 }
 
 h3 {
-    font-size: 21px;
+    font-size: 28px;
     text-align: center;
     font-family: 'Roboto Mono', sans-serif;
     border-bottom: 1px solid #bbb;
-    color: #E7E3D4;
+    color:  #B23850;
 }
 
 ul {
@@ -53,7 +55,6 @@ ul {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: #C4DBF6;
     text-align: center;
 }
 
@@ -62,6 +63,7 @@ li {
     color: #000000;
     text-align: center;
     padding: 10px 16px;
+
  
 }
 
@@ -71,14 +73,27 @@ li a:hover {
 }
 
 li a.active {
-    background-color: #8590AA;
+    background-color: #EEE;
     color: #3B8BEB;
 }
 
 nav {
-    font-size: 35px ;
+    font-size: 18px ;
     color: #000000;
-   
+    background-color: #AFEEEE ;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a {
+
+    text-decoration: none;
+    color: #000000;
+}
+
+nav li .active {
+
+    background color: #eee;
 }
 
 .hide {
@@ -90,11 +105,7 @@ nav {
   }
 
 
-header {
-    font-size: 45px;
-    color: #B23850;
-    vertical-align: middle;
-}
+
 
 article, section {
     text-align: center;
