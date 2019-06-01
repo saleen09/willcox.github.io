@@ -1,0 +1,132 @@
+
+
+body {
+    font-size: 14px;
+    font-family: 'Roboto Mono', 'Segoe UI', Arial, sans-serif, monospace;
+    color: #000000;
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+    float: none;
+
+}   
+
+.siteTitle {
+    font-size: 35px ;
+    text-align: center;
+
+ 
+}
+
+header {
+    font-size: 45px;
+    color: #B23850;
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 45px ;
+    text-align: center;
+    font-family: 'Roboto Mono', sans-serif;
+    color:  #B23850;
+ 
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Roboto Mono', sans-serif;
+    border-bottom: 1px solid #bbb;
+    color:  #B23850;
+}
+
+h3 {
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Roboto Mono', sans-serif;
+    border-bottom: 1px solid #bbb;
+    color:  #B23850;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+li {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 10px 16px;
+
+ 
+}
+
+li a:hover {
+    background-color: #8590AA;
+    color: #B23850;
+}
+
+li a.active {
+    background-color: #EEE;
+    color: #3B8BEB;
+}
+
+nav {
+    font-size: 18px ;
+    color: #000000;
+    background-color: #AFEEEE ;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a {
+
+    text-decoration: none;
+    color: #000000;
+}
+
+nav li .active {
+
+    background color: #eee;
+}
+
+.hide {
+    display: none;  
+  }
+
+.hide1 {
+    display: none;  
+  }
+
+
+
+
+article, section {
+    text-align: center;
+}
+
+main img {
+        float: none;
+}
+
+header img {
+    width: 230px;
+    height: auto;
+    float: left;
+}
+
+footer {
+    font-size: 15px ;
+    color: #C4DBF6;
+    vertical-align: middle;
+    text-align: center;
+
+  
+}
+
