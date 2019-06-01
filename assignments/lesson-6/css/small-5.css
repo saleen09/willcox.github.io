@@ -16,6 +16,7 @@ body {
 .siteTitle {
     font-size: 35px ;
     text-align: center;
+    margin: 0 0 0 6
 
  
 }
@@ -23,6 +24,7 @@ body {
 header {
     font-size: 45px;
     color: #B23850;
+    margin: 0 0 0 8
     vertical-align: middle;
 }
 
@@ -123,7 +125,7 @@ header img {
 
 footer {
     font-size: 15px ;
-    color: #C4DBF6;
+    color: #B23850;
     vertical-align: middle;
     text-align: center;
 
