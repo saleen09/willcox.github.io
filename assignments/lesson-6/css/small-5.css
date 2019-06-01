@@ -4,6 +4,7 @@ body {
     font-size: 14px;
     font-family: 'Roboto Mono', 'Segoe UI', Arial, sans-serif, monospace;
     color: #000000;
+    background: "images/hero_large.jpg";
 }
 
 .icon {
