@@ -4,7 +4,8 @@ body {
     font-size: 14px;
     font-family: 'Roboto Mono', 'Segoe UI', Arial, sans-serif, monospace;
     color: #000000;
-    background: "images/hero_large.jpg";
+    background-image: url("images/hero_large.jpeg");
+    background-color: #cccccc;
 }
 
 .icon {
@@ -26,7 +27,7 @@ header {
     font-size: 45px;
     color: #B23850;
     margin: 0 0 0 8
-    vertical-align: middle;
+    
 }
 
 h1 {
@@ -96,7 +97,7 @@ nav a {
 
 nav li .active {
 
-    background color: #eee;
+    background-color: #eee;
 }
 
 .hide {
@@ -108,7 +109,11 @@ nav li .active {
   }
 
 
+main {
 
+    background-image: url("images/hero_large.jpg");
+    background-color: #cccccc;
+}
 
 article, section {
     text-align: center;
