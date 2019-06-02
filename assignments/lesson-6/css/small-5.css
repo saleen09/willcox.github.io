@@ -90,8 +90,8 @@ main {
 
 .summary {
 	position: absolute;
-	top: 25px;
-	left: 50px;
+	top: 15px;
+	left: 30px;
 	background: radial-gradient(#eee, #4567aa);
 	border: 1px solid #000;
 	padding: 1.5rem;
