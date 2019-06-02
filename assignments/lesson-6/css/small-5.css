@@ -1,11 +1,9 @@
 
-
 body {
     font-size: 14px;
     font-family: 'Roboto Mono', 'Segoe UI', Arial, sans-serif, monospace;
     color: #000000;
-    background-image: url("images/hero_large.jpeg");
-    background-color: #cccccc;
+    
 }
 
 .icon {
@@ -28,6 +26,14 @@ header {
     color: #B23850;
     margin: 0 0 0 8
     
+}
+
+.clearfix:after  {
+
+    content:"";
+    display: table;
+    clear: both;
+
 }
 
 h1 {
@@ -100,18 +106,25 @@ nav li .active {
     background-color: #eee;
 }
 
-.hide {
-    display: none;  
-  }
+.responsive li { 
+    
+    display: block; 
 
-.hide1 {
-    display: none;  
-  }
+}
 
+
+/*.hide {  
+    display: none;  
+  }  
+
+ .hide1 {
+    display: none;  
+
+ }
+ */
 
 main {
 
-    background-image: url("images/hero_large.jpg");
     background-color: #cccccc;
 }
 
@@ -137,4 +150,3 @@ footer {
 
   
 }
-

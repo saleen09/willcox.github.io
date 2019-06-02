@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="clearfix">
         <img src="images/sun1.jpg" alt=" Happy Happy Sun"><br>
 
 
@@ -29,14 +29,14 @@
 
     
     <nav>
-        <ul>
-            <li><a href="#" class="current">Menu</a></li>
-            <li class="hide"><a href="home/">Home</a></li>
-            <li class="hide"><a href="preston/">Preston</a></li>
-            <li class="hide"><a href="sodasprings/">Soda Springs</a></li>
-            <li class="hide"><a href="fishhaven/">Fish Haven</a></li>
-            <li class="hide"><a href="stormcenter/">Storm Center</a></li>
-            <li class="hide"><a href="gallery/">Gallery</a></li>
+        <ul class="navigation">
+            <li><a href="#" class="Menu" onclick="toggleMenu()">&#9776;Menu</a></li>
+            <li class="hide"><a href="#" title="home/">Home</a></li>
+            <li class="hide"><a href="#" title="preston/">Preston</a></li>
+            <li class="hide"><a href="#" title="sodasprings/">Soda Springs</a></li>
+            <li class="hide"><a href="#" title="fishhaven/">Fish Haven</a></li>
+            <li class="hide"><a href="#" title="stormcenter/">Storm Center</a></li>
+            <li class="hide"><a href="#" title="gallery/">Gallery</a></li>
         </ul>
     </nav>
 
@@ -44,6 +44,15 @@
     <main>
 
         <h2>Preston</h2>
+        <div class="hero">
+                <img src="images/hero_large.jpg">
+                <section class="stats">
+                    <h3>Statistics</h3>
+                    <p>Label: <span id="value1">Value</span</p>
+                    <p>Label: Value</p>
+                    <p>Label: Value</p>
+                </section>
+            </div>
 
         <h2 class="hide1"> Weather Summary</h2><br>
         <img src="images/wman2.jpg" alt="Ron Burgandy for the win" class="hide1">
@@ -96,14 +105,20 @@
 
 
     <footer>
-        <p> @2019 | SwullockingToday.com | Attributions | William Cox | Wednesday, 18 May 2019
+        <p> @2019 | SwullockingToday.com | Attributions | William Cox | 
+            
         </p>
 
-
+    <p id="cdate"><script src="js/currentdate.js"></script></p> 
 
     </footer>
 
 
+    
+
 </body>
 
 </html>
+
+
+
