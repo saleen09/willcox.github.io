@@ -1,0 +1,193 @@
+
+body {
+    font-size: 14px;
+    font-family: 'Roboto Mono', 'Segoe UI', Arial, sans-serif, monospace;
+    color: #000000;
+    
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+    float: none;
+
+}   
+
+.siteTitle {
+    font-size: 35px ;
+    text-align: center;
+    margin: 0 0 0 6
+
+ 
+}
+
+header {
+    font-size: 45px;
+    color: #B23850;
+    margin: 0 0 0 8
+    
+}
+
+.clearfix:after  {
+
+    content:"";
+    display: table;
+    clear: both;
+
+}
+
+h1 {
+    font-size: 45px ;
+    text-align: center;
+    font-family: 'Roboto Mono', sans-serif;
+    color:  #B23850;
+ 
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Roboto Mono', sans-serif;
+    border-bottom: 1px solid #bbb;
+    margin: 10px;
+    padding: 10px;
+    color:  #B23850;
+
+
+}
+
+h3 {
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Roboto Mono', sans-serif;
+    border-bottom: 1px solid #bbb;
+    color:  #B23850;
+}
+
+h4 {
+
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Roboto Mono', sans-serif;
+    border-bottom: 1px solid #bbb;
+    color:  #B23850;
+    text-shadow:3px 3px 5px;
+}
+
+main {
+    max-width:820px;
+    margin:0 auto;
+
+}
+
+
+.hero {
+    margin: 10px auto;
+    padding: 2px;
+    position: relative;
+
+}
+
+.summary {
+	position: absolute;
+	top: 15px;
+	left: 30px;
+	background: radial-gradient(#eee, #4567aa);
+	border: 1px solid #000;
+	padding: 10px;
+	box-shadow: 0 0 30px #fff;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+li {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 10px 16px;
+
+ 
+}
+
+li a:hover {
+    background-color: #8590AA;
+    color: #B23850;
+}
+
+li a.active {
+    background-color: #EEE;
+    color: #3B8BEB;
+}
+
+nav {
+    font-size: 18px ;
+    color: #000000;
+    background-color: #AFEEEE ;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a {
+
+    text-decoration: none;
+    color: #000000;
+}
+
+nav li .active {
+
+    background-color: #eee;
+}
+
+.responsive li { 
+    
+    display: block; 
+
+}
+
+
+.hide {  
+    display: none;  
+  }  
+
+ .hide1 {
+    display: none;  
+
+ }
+ 
+
+main {
+
+    background-color: #cccccc;
+}
+
+article, section {
+    text-align: center;
+    padding: 2px;
+    margin: 2;
+}
+
+main img {
+        float: right;
+        margin: -2 0 0 0 ;
+}
+
+header img {
+    width: 230px;
+    height: auto;
+    float: left;
+}
+
+footer {
+    font-size: 15px ;
+    color: #B23850;
+    vertical-align: middle;
+    text-align: center;
+
+  
+}
