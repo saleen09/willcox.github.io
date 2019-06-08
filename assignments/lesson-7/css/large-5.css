@@ -1,5 +1,13 @@
+ /* medium and up views */
+
 @media only screen and (min-width: 775px) {
 
+    .navigation li:first-child { display: none;	}
+	.navigation li { display: block; flex: 1 1 auto; }
+    .navigation, .container { flex-direction: row; }
+    
+}
+    
     body {
         font-size: 18px;
     }
@@ -32,5 +40,6 @@
     main, article, section, h1, h2, h3, main li {
         text-align: center;
 }
+
 
 }
