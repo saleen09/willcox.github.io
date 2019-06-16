@@ -99,7 +99,7 @@ main {
     background-color: DodgerBlue;
     }
     
-.g.container > {
+.g.container  {
      background-color: #f1f1f1;
     width: 100px;
     margin: 10px;
@@ -198,9 +198,7 @@ main {
 
 /* -----------FORM--------------*/
 
-input[type="radio"]{
-    -webkit-appearance: radio;
-}
+
 
 form fieldset {
  
@@ -263,7 +261,7 @@ form input.submitBrn {
    background-color: #9c2c13;
    color: white;
    border-radius: 1rem;
-   padding: .75rem 1.5 rem;
+   padding: .75rem 1.5rem;
    margin: 0 0 2rem 2%;
    width: 96%;
    max-width: 20rem;
