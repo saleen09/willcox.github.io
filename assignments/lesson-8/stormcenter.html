@@ -55,7 +55,7 @@
             
             <fieldset>
             <legend>Storm Details</legend>
-            <label class="top">Full Name*<input type="text" name="fname" required></label>
+            <label class="top">Full Name*<input type="text" name="fname" pattern="[A-Za-z]{5,}"required></label>
             <label class="top">Email*<input type="email" name="email" placeholder="yourmom@gmail.com"></label>
             <label class="top">Phone<input type="tel" name="phone" placeholder="555-1212" required></label>
             <label class="top">Zip Code<input type="zip" name="zipcode" required></label>
@@ -65,7 +65,7 @@
          
             <label class="top">Storm Type
                 <select name="subject">
-                        <option value="">Please Select &#9662;</option>
+                        <option value="">Please Select &#9662;</option><br>
                     <option value="hail"> Hail</option>
                     <option value="fflood"> Flash Flood</option>
                     <option value="hurricane"> Hurricane</option>
@@ -75,22 +75,21 @@
                     <option value="monsoon"> Monsoon</option>
                     <option value="typhoon"> Typhoon</option>
                     <option value="drizzle"> Drizzle</option>
-                    
-    
+
     
                 </select>
     
             </label>
         
-            <label class="top" for="rating">Storm Severity:</label>
+            <label class="slider" for="rating">Storm Severity:</label>
 		            <input type="range" id="rating" value="5"  min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
 		            <span id="ratingvalue">5</span><br>
 
 		            
                     <label class="top">Storm Region
                         <select name="subject">
-                                <option value="">Select Region &#9662;</option>
-                            <option value="preston">Preston</option>
+                                <option value="">Select Region &#9662;</option><br>
+                          <option value="preston">Preston</option>
                             <option value="scity"> Sugar City</option>
                             <option value="fhaven"> Fish Haven</option>
                          
@@ -98,17 +97,23 @@
             
             
                         </select>
+                            
+                     
+                        <h2>User In-Danger Level:</h2><br>
+                 
+                        <input type="radio" name="wth" value="YES">YES
+                        <input type="radio" name="wth" value="NO">NO
+                        <input type="radio" name="wth" value="MAYBE"> MAYBE / Too Wussy to find out!
+                       
 
-                        <legend>User In-Danger Level:</legend>
-                        <label class="sbs"><input type="radio" name="level" value="YES">YES</label>
-                        <label class="sbs"><input type="radio" name="level" value="NO">NO</label>
-                        <label class="sbs"><input type="radio" name="level" value="MAYBE">Maybe</label>
-                        <label class="sbs"><input type="radio" name="level" value="WONT">Would need to take a closer look but won't</label>
-        
+                        
+                  
+                 
+                          
                         
                         <label class="top">Addiitonal Information</label>
                         <textarea rows="4" cols="50" name="ainfo" form="usrform">
-                            Enter info here...</textarea>
+                            </textarea>
             
 
             </fieldset>
