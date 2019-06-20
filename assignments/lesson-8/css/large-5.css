@@ -6,7 +6,7 @@
 	.navigation li { display: block; flex: 1 1 auto; }
     .navigation, .container { flex-direction: row; }
     
-}
+
     
     body {
         font-size: 18px;

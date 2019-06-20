@@ -55,10 +55,10 @@
             
             <fieldset>
             <legend>Storm Details</legend>
-            <label class="top">Full Name*<input type="text" name="fname" pattern="[A-Za-z]{5,}" required></label>
-            <label class="top">Email*<input type="email" name="email" placeholder="yourmom@gmail.com"></label>
-            <label class="top">Phone<input type="tel" name="phone" placeholder="555-1212" required></label>
-            <label class="top">Zip Code<input type="text" pattern="[0-9]{5}" required></label>
+            <label class="top">Full Name*<input type="text" name="fname" pattern="[A-Za-z ]{5,}" required></label>
+            <label class="top">Email<input type="email" name="email" placeholder="yourmom@gmail.com"></label>
+            <label class="top">Phone*<input type="tel" name="phone" placeholder="555-1212" required></label>
+            <label class="top">Zip Code*<input type="text" pattern="[0-9]{5}" required></label>
             <label class="top">Storm Date<input type="date" name="date"></label>
         
 
@@ -114,6 +114,8 @@
                         <label class="top">Addiitonal Information</label>
                         <textarea rows="4" cols="50" name="ainfo">
                             </textarea>
+
+                    <input type="submit" name="SUBMIT">
             
 
             </fieldset>
@@ -129,6 +131,9 @@
 
         <p id="cdate">
             <script src="js/currentdate.js"></script>
+            <script src="js/windchill.js"></script>
+            <script src="js/hamburger.js"></script>
+            <script src="js/adjustrating.js"></script>
         </p>
 
     </footer>
