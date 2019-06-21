@@ -39,8 +39,8 @@ request.onload = function () {
                 myH2.textContent = towns[i].name;
                 myTown1.textContent = 'Year Founded: ' + towns[i].yearFounded;
                 myTown2.textContent = 'Motto: ' + towns[i].motto;
-                myTown3.textContent = 'Current Population:' + towns[i].currentPop;
-                myTown4.textContent = 'Average Rainfall:' towns[i].averageRain;
+                myTown3.textContent = 'Current Population:' + towns[i].currentPopulation;
+                myTown4.textContent = 'Average Rainfall:' towns[i].averageRainfall;
 
                 /*var superPowers = heroes[i].powers;
                 for (var j = 0; j < superPowers.length; j++) {
