@@ -37,10 +37,10 @@ request.onload = function () {
                 /*var myList = document.createElement('ul');*/
 
                 myH2.textContent = towns[i].name;
-                myTown1.textContent = 'Year Founded: ' + towns[i].yearfounded;
+                myTown1.textContent = 'Year Founded: ' + towns[i].yearFounded;
                 myTown2.textContent = 'Motto: ' + towns[i].motto;
-                myTown3.textContent = 'Current Population:';
-                myTown4.textContent = 'Average Rainfall:';
+                myTown3.textContent = 'Current Population:' + towns[i].currentPop;
+                myTown4.textContent = 'Average Rainfall:' towns[i].averageRain;
 
                 /*var superPowers = heroes[i].powers;
                 for (var j = 0; j < superPowers.length; j++) {
