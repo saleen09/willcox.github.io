@@ -40,7 +40,7 @@ function showTowns(jsonObj) {
         myTown1.textContent = 'Year Founded: ' + towns[i].yearFounded;
         myTown2.textContent = 'Motto: ' + towns[i].motto;
         myTown3.textContent = 'Current Population:' + towns[i].currentPopulation;
-        myTown4.textContent = 'Average Rainfall:' towns[i].averageRainfall;
+        myTown4.textContent = 'Average Rainfall:' + towns[i].averageRainfall;
 
         /*var superPowers = heroes[i].powers;
         for (var j = 0; j < superPowers.length; j++) {
