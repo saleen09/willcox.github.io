@@ -27,7 +27,7 @@ function populateHeader(jsonObj) {
 }
 
 function showTowns(jsonObj) {
-    var towns = jsonObj['tdata'];
+    var towns = jsonObj['towns'];
     var townNames = ["Fish Haven", "Soda Springs", "Preston"]
 
     for (var i = 0; i < towns.length; i++)
