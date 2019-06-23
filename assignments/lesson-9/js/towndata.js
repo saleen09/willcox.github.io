@@ -10,9 +10,7 @@ request.send();
 
 request.onload = function () {
     var tdata = request.response;
-/*   populateHeader(tdata);
-    showTowns(tdata);
-}
+/*  
 
 function populateHeader(jsonObj) {
     var myH1 = document.createElement('h1');
