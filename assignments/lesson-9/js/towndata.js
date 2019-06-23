@@ -1,7 +1,7 @@
 
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-var header = document.querySelector('header');
-var section = document.querySelector('section');
+var header = document.querySelector('header.tdata');
+var section = document.querySelector('section.tdata');
 var request = new XMLHttpRequest();
 
 request.open('GET', requestURL);
