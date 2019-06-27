@@ -30,7 +30,7 @@ function showTowns(jsonObj) {
     var towns = jsonObj['towns'];
     var townNames = ["Fish Haven", "Soda Springs", "Preston"];
 
-    for (var i = 0; i < towns.length; i++) {}
+    for (var i = 0; i < towns.length; i++) {
     for (var x = 0; x < townnames.length; x++){
         if (towns[i].name == townNames[x])
 
@@ -66,4 +66,4 @@ function showTowns(jsonObj) {
     }
     }
 
-
+}
