@@ -31,7 +31,7 @@ function showTowns(jsonObj) {
     var townNames = ["Fish Haven", "Soda Springs", "Preston"];
 
     for (var i = 0; i < towns.length; i++) {
-    for (var x = 0; x < townnames.length; x++){
+    for (var x = 0; x < townNames.length; x++){
         if (towns[i].name == townNames[x])
 
      {
