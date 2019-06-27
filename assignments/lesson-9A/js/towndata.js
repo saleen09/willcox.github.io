@@ -10,7 +10,7 @@ request.send();
 
 request.onload = function () {
     var tdata = request.response;
-        populateHeader(tdata);
+        /* populateHeader(tdata); */
         showTowns(tdata);
 }
 
