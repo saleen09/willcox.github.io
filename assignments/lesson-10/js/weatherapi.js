@@ -6,7 +6,7 @@ weatherRequest.onload = function () {
     let weatherData = JSON.parse(weatherRequest.responseText);
     console.log(weatherData);
 
-    document.getElementById('cTemp').innerHTML = weatherData.main.temp;
+    document.getElementById('cCond').innerHTML = weatherData.weather.o.main;
     document.getElementById('hTemp').innerHTML = weatherData.main.temp_max;
     document.getElementById('humidity').innerHTML = weatherData.main.humidity;
     document.getElementById('wSpeed').innerHTML = weatherData.wind.speed;

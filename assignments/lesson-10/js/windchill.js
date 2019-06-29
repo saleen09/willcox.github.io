@@ -1,6 +1,6 @@
 
 /*function wchillnow() {} */
-var wchill=35.74 + 0.6215*otemp +(0.4275*otemp - 35.75)*Math.pow(wspeed,0.16);
+var wChill=35.74 + 0.6215*hTemp +(0.4275*hTemp - 35.75)*Math.pow(wSpeed,0.16);
 
 
 
