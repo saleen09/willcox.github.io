@@ -10,7 +10,7 @@ weatherRequest.onload = function () {
     document.getElementById('hTemp').innerHTML = weatherData.main.temp_max;
     document.getElementById('humidity').innerHTML = weatherData.main.humidity;
     document.getElementById('wSpeed').innerHTML = weatherData.wind.speed;
-    document.getElementById('cCond').innerHTML = weatherData.weather.main;
+    document.getElementById('cCond').innerHTML = weatherData.weather[""0""].main;
 
 
 }
