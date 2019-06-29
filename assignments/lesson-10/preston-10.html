@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Weather for BFE - SwullockingToday.com</title>
+    <meta name="description"
+        content="Keeping Preston, Soda Springs and Fish Haven Communities know what's happening in the sky!">
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-5.css">
+    <link rel="stylesheet" href="css/large-5.css">
+
+</head>
+
+<body>
+    <header class="clearfix">
+        <img src="images/sun1.jpg" alt=" Happy Happy Sun"><br>
+
+
+        <div id="siteTitle">
+            <h1>SwullockingToday.com</h1>
+        
+
+
+        <h2><i>"Why look up when you have us?!?"</i> </h2>
+    </div>
+
+    </header>
+
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" class="Menu" onclick="toggleMenu()">&#9776;Menu</a></li>
+            <li class="hide"><a href="#" title="home/">Home</a></li>
+            <li class="hide"><a href="#" title="preston-10.html/">Preston</a></li>
+            <li class="hide"><a href="#" title="sodasprings/">Soda Springs</a></li>
+            <li class="hide"><a href="#" title="fishhaven/">Fish Haven</a></li>
+            <li class="hide"><a href="#" title="stormcenter-10.html/">Storm Center</a></li>
+            <li class="hide"><a href="#" title="gallery-10.html/">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+
+        <h2>Preston</h2>
+        <div class="hero">
+
+                <img src="images/hero_small.jpg" alt="Preston Meadows"  srcset="images/hero_small.jpg 400w, images/hero_large.jpg 800w" sizes="100vw">
+
+            <section class="summary">
+                <h4>Weather Summary</h4>
+ 
+                <table style="width:70%">
+                      <tr>
+                            <td>Currently</td>
+                            <td>High</td>
+                            <td>Windchill</td>
+                            <td>Humidity</td>
+                            <td>Wind Speed</td>
+                          </tr>
+                          <tr>
+                                  <td>Sunny</td>
+                                  <td id="otemp">76 &#8457;</td>
+                                  <td><span id="wchill"></span> &#8457;</td>
+                                  <td>69%</td>
+                                  <td id="wspeed">5MPH</td>
+                                </tr>
+                  </table>
+            </section>
+        </div>
+
+        <div class="forecast hide1">
+        <h2>5 day Forecast</h2><br>
+        
+        
+        <table style="width:100%">
+            
+            <tr>
+              <td>Monday</td>
+              <td>Tuesday</td>
+              <td>Wednesday</td>
+              <td>Thursday</td>
+              <td>Friday</td>
+            </tr>
+            <tr>
+                    <td>74 &#8457;</td>
+                    <td>75 &#8457;</td>
+                    <td>76 &#8457;</td>
+                    <td>77 &#8457;</td>
+                    <td>78 &#8457;</td>
+                  </tr>
+          </table>
+        </div>
+
+          
+
+    </main>
+
+    <article>
+        
+        <h3> Why is looking directly into the sun bad?
+        </h3> 
+        <p> Author : Ray Charles
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum urna dui.
+            Ut imperdiet facilisis sapien. Nunc ultrices sem eget ligula hendrerit pulvinar non et tellus.
+            Ut dignissim vel ipsum sagittis faucibus. Aenean iaculis eleifend nulla id rhoncus.
+            Cras velit leo maximus et finibus a molestie eget quam.
+        </p>
+        <img src="images/blind1.jpg" alt="HE LOOKED!"><br>
+    </article>
+
+    <p></p><br><br>
+
+
+    <h3>CONTACT US:</h3><br>
+    <section>
+        <h3> SwullockingToday.com</h3>
+        <p> 30 N. 1st E</p>
+        <p>Preston, ID 83263</p>
+
+        <p>(999) 999-9999</p>
+
+        <p> info@swullockingtoday.com</p>
+
+
+
+        <img src="images/map1.jpg" alt="Map of WhyDontYouJustLookOutside County">
+
+
+
+    </section>
+
+
+    <footer>
+        @2019 | SwullockingToday.com | Attributions | William Cox |
+
+        
+
+        <p id="cdate">
+            <script src="js/currentdate.js"></script>
+            <script src="js/windchill.js"></script>
+            <script src="js/weatherapi.js"></script>
+        </p>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
