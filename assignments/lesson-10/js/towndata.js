@@ -12,18 +12,6 @@ request.onload = function () {
     var tdata = request.response;
         /* populateHeader(tdata); */
         showTowns(tdata);
-}
-
-/* function populateHeader(jsonObj) {
-    var myH1 = document.createElement('h1');
-    myH1.textContent = jsonObj['squadName'];
-    header.appendChild(myH1); -->
-
-                < !––  var myPara = document.createElement('p');
-    myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
-    header.appendChild(myPara);
-} */
-
 
 
 function showTowns(jsonObj) {
@@ -56,11 +44,6 @@ function showTowns(jsonObj) {
             myEvent.appendChild(eventItem);
         }
 
-        /*var superPowers = heroes[i].powers;
-        for (var j = 0; j < superPowers.length; j++) {
-            var listItem = document.createElement('li');
-            listItem.textContent = superPowers[j];
-            myList.appendChild(listItem);*/
         }
 
         myArticle.appendChild(myH2);
@@ -76,3 +59,4 @@ function showTowns(jsonObj) {
 
 }
 
+}
