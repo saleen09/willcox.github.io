@@ -29,7 +29,7 @@ request.onload = function () {
 function showTowns(jsonObj) {
     var towns = jsonObj['towns'];
     var townNames = ["Fish Haven", "Soda Springs", "Preston"];
-
+ 
     for (var i = 0; i < towns.length; i++) {
     for (var x = 0; x < townNames.length; x++){
         if (towns[i].name == townNames[x])
@@ -41,13 +41,20 @@ function showTowns(jsonObj) {
         var myTown2 = document.createElement('p');
         var myTown3 = document.createElement('p');
         var myTown4 = document.createElement('p');
-        /*var myList = document.createElement('ul');*/
+        var myEvent = document.createElement('ul');
 
         myH2.textContent = towns[i].name;
         myTown1.textContent = 'Year Founded: ' + towns[i].yearFounded;
         myTown2.textContent = 'Motto: ' + towns[i].motto;
         myTown3.textContent = 'Current Population:' + towns[i].currentPopulation;
         myTown4.textContent = 'Average Rainfall:' + towns[i].averageRainfall;
+        myTown5.textContent = 'Events:' ;
+
+        var events = towns[i].events;
+        for (var z = 0; x < townNames.length; z++){
+            var eventItem = document.createElement('li');
+            myEvent.appendChild(eventItem);
+        }
 
         /*var superPowers = heroes[i].powers;
         for (var j = 0; j < superPowers.length; j++) {
@@ -61,9 +68,11 @@ function showTowns(jsonObj) {
         myArticle.appendChild(myTown2);
         myArticle.appendChild(myTown3);
         myArticle.appendChild(myTown4);
+        myArticle.appendChild(myEvent);
 
         section.appendChild(myArticle);
     }
     }
 
 }
+

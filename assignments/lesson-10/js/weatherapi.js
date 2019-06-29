@@ -12,5 +12,4 @@ weatherRequest.onload = function () {
     document.getElementById('wSpeed').innerHTML = weatherData.wind.speed;
     document.getElementById('cCond').innerHTML = weatherData.weather[0].main;
 
-
 }
