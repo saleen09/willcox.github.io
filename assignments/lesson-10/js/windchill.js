@@ -1,9 +1,14 @@
 
 /*function wchillnow() {} */
+
+var temp = document.getElementById('hTemp').innerHTML ;
+var wind = document.getElementById('wSpeed').innerHTML;
+
+
 var wChill=35.74 + 0.6215*hTemp +(0.4275*hTemp - 35.75)*Math.pow(wSpeed,0.16);
 
 
-
+document.getElementById('wChill').innerHTML = wChill;
 
 
 /*<!-- 35.74 + 0.6215T - 35.75V (**0.16) + 0.4275TV(**0.16)
