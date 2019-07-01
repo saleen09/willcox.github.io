@@ -13,8 +13,8 @@
     
 
     for(i = 0; i < fcList.length; i++){
-        if(fcList[i].dt_txt.includes ('18:00:00')) {
-            forecastCon.push(fcList[i].weather[0].icon);
+        if(fcList.list[i].dt_txt.includes ('18:00:00')) {
+            forecastCon.push(fcList.list[i].weather[0].icon);
             forecastTemp.push(fcList[i].main.temp);
             forecastDesc.push(fcList[i].weather[0].description);
 
