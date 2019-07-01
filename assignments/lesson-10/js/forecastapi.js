@@ -38,11 +38,11 @@
 
         
 
-        document.getElementById('fcIcon1').setAttribute("src", "http://openweathermap.org/img/w/" + img01 + ".png");
-        document.getElementById('fcIcon2').setAttribute("src", "http://openweathermap.org/img/w/" + img02 + ".png");
-        document.getElementById('fcIcon3').setAttribute("src", "http://openweathermap.org/img/w/" + img03 + ".png");
-        document.getElementById('fcIcon4').setAttribute("src", "http://openweathermap.org/img/w/" + img04 + ".png");
-        document.getElementById('fcIcon5').setAttribute("src", "http://openweathermap.org/img/w/" + img05 + ".png");
+        document.getElementById('fcIcon1').setAttribute("src", "https://openweathermap.org/img/w/" + img01 + ".png");
+        document.getElementById('fcIcon2').setAttribute("src", "https://openweathermap.org/img/w/" + img02 + ".png");
+        document.getElementById('fcIcon3').setAttribute("src", "https://openweathermap.org/img/w/" + img03 + ".png");
+        document.getElementById('fcIcon4').setAttribute("src", "https://openweathermap.org/img/w/" + img04 + ".png");
+        document.getElementById('fcIcon5').setAttribute("src", "https://openweathermap.org/img/w/" + img05 + ".png");
 
         document.getElementById('fTemp1').innerHTML = temp01.toFixed(0)+" &deg;F";
         document.getElementById('fTemp2').innerHTML = temp02.toFixed(0)+" &deg;F";
