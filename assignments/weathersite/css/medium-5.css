@@ -7,3 +7,15 @@
     }
 
 }
+
+nav li {
+    display: contents;
+}
+nav li:first-child {
+    display: contents;
+}
+
+nav .unhide li {
+    display: none;
+
+}

@@ -200,12 +200,7 @@ nav li .active {
     background-color: #eee;
 }
 
-/*.responsive li { 
-    
-    display: block; 
 
-}
-*/
 nav li {
     display: none;
 }
