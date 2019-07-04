@@ -116,6 +116,14 @@ main {
     
     }
 
+.tdata {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: DodgerBlue;
+    box-shadow: 0 0 50px #333;
+}    
+
     .t-container {
         display: grid;
         grid-template-columns: 1fr;
