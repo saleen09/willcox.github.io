@@ -200,16 +200,25 @@ nav li .active {
     background-color: #eee;
 }
 
-.responsive li { 
+/*.responsive li { 
     
     display: block; 
 
 }
+*/
+nav li {
+    display: none;
+}
+nav li:first-child {
+    display: contents;
+}
+
+nav .unhide li {
+    display: contents;
+
+}
 
 
-.hide {  
-    display: none;  
-  }  
 
  .hide1 {
     display: none;  

@@ -12,11 +12,11 @@
     var forecastDesc = [];
     
 
-    for(i = 0; i < fcList.length; i++){
+    for(i = 0; i < fcList.list.length; i++){
         if(fcList.list[i].dt_txt.includes ('18:00:00')) {
             forecastCon.push(fcList.list[i].weather[0].icon);
-            forecastTemp.push(fcList[i].main.temp);
-            forecastDesc.push(fcList[i].weather[0].description);
+            forecastTemp.push(fcList.list[i].main.temp);
+            forecastDesc.push(fcList.list[i].weather[0].description);
 
         }
         
