@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Weather for BFE - SwullockingToday.com</title>
+    <meta name="description"
+        content="Keeping Preston, Soda Springs and Fish Haven Communities know what's happening in the sky!">
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-5.css">
+    <link rel="stylesheet" href="css/large-5.css">
+
+</head>
+
+<body>
+    <header class="clearfix">
+        <img src="images/sun1.jpg" alt=" Happy Happy Sun"><br>
+
+
+        <div id="siteTitle">
+            <h1>SwullockingToday.com</h1>
+        
+
+
+        <h2><i>"Why look up when you have us?!?"</i> </h2>
+    </div>
+
+    </header>
+
+
+    <nav>
+        <ul id="primaryNav" class="navigation">
+            <li><a href="#" class="Menu" onclick="toggleMenu()">&#9776;Menu</a></li>
+            <li><a href="#" title="index.html/">Home</a></li>
+            <li><a href="#" title="preston.html/">Preston</a></li>
+            <li><a href="#" title="sodasprings.html/">Soda Springs</a></li>
+            <li><a href="#" title="fishhaven.html/">Fish Haven</a></li>
+            <li><a href="#" title="stormcenter.html/">Storm Center</a></li>
+            <li><a href="#" title="gallery.html/">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+
+        <h2>Preston</h2>
+        <div class="hero">
+
+                <img src="images/hero_small.jpg" alt="Preston Meadows"  srcset="images/hero_small.jpg 400w, images/hero_large.jpg 800w" sizes="100vw">
+
+            <section class="summary">
+                <h4>Weather Summary</h4>
+ 
+                <table style="width:70%">
+                      <tr>
+                            <td>Currently</td>
+                            <td>Temp.</td>
+                            <td>High</td>
+                            <td>Humidity</td>
+                            <td>Wind Speed</td>
+                            <td>Wind Chill</td>
+                          </tr>
+                          <tr>
+                                  <td><span id="cCond"></span></td>
+                                  <td><span id="cTemp">&deg;</span></td>
+                                  <td><span id="hTemp">&deg;</span></td>
+                                  <td><span id="humidity">%</span></td>
+                                  <td><span id="wSpeed">MPH</span></td>
+                                  <td><span id="wChill">&deg;</span></td>
+                                </tr>
+                  </table>
+            </section>
+        </div>
+
+        <div class="forecast hide1">
+        <h2>5 day Forecast</h2><br>
+        
+        
+        <table style="width:100%">
+            
+            <tr>
+              <td>Monday</td>
+              <td>Tuesday</td>
+              <td>Wednesday</td>
+              <td>Thursday</td>
+              <td>Friday</td>
+            </tr>
+            <tr>
+                <td><img id="fcIcon1"  alt="desc01"></td>
+                <td><img id="fcIcon2"  alt="desc02"></td>
+                <td><img id="fcIcon3"  alt="desc03"></td>
+                <td><img id="fcIcon4"  alt="desc04"></td>
+                <td><img id="fcIcon5"  alt="desc04"></td>
+                </tr>
+            <tr>
+                <td><span id="fTemp1"></span></td>
+                <td><span id="fTemp2"></span></td>
+                <td><span id="fTemp3"></span></td>
+                <td><span id="fTemp4"></span></td>
+                <td><span id="fTemp5"></span></td>
+            </tr>
+          </table>
+        </div>
+
+          
+
+    </main>
+
+    <article>
+        
+        <h3> Why is looking directly into the sun bad?
+        </h3> 
+        <p> Author : Ray Charles
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum urna dui.
+            Ut imperdiet facilisis sapien. Nunc ultrices sem eget ligula hendrerit pulvinar non et tellus.
+            Ut dignissim vel ipsum sagittis faucibus. Aenean iaculis eleifend nulla id rhoncus.
+            Cras velit leo maximus et finibus a molestie eget quam.
+        </p>
+        <img src="images/blind1.jpg" alt="HE LOOKED!"><br>
+    </article>
+
+    <p></p><br><br>
+
+
+    <h3>CONTACT US:</h3><br>
+    <section>
+        <h3> SwullockingToday.com</h3>
+        <p> 30 N. 1st E</p>
+        <p>Preston, ID 83263</p>
+
+        <p>(999) 999-9999</p>
+
+        <p> info@swullockingtoday.com</p>
+
+
+
+        <img src="images/map1.jpg" alt="Map of WhyDontYouJustLookOutside County">
+
+
+
+    </section>
+
+
+    <footer>
+        @2019 | SwullockingToday.com | Attributions | William Cox 
+        <p> All weather data courtesy of Open Weather | 
+            <a href ="https://openweathermap.org">www.openweathermap.com</a></p>
+        
+
+        <p id="cdate">
+        </p>
+
+    </footer>
+
+    <script src="js/currentdate.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/weatherapi.js"></script>
+    <script src="js/forecastapi.js"></script>
+    <script src="js/hamburger.js"></script>
+
+
+
+</body>
+
+</html>

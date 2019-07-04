@@ -1,0 +1,21 @@
+@media only screen and (min-width: 550px) {
+
+.g-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: DodgerBlue;
+    }
+
+}
+
+nav li {
+    display: contents;
+}
+nav li:first-child {
+    display: contents;
+}
+
+nav .unhide li {
+    display: none;
+
+}
