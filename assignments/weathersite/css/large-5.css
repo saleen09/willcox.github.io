@@ -7,7 +7,7 @@
         display: none;	
     }
 	.navigation li { 
-        display: flex 1 1;
+        display: flex;
     }
 
     .navigation, .container { 
