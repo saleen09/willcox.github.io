@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>StormCenter - SwullockingToday.com</title>
+    <title>StormCenter for BFE - SwullockingToday.com</title>
     <meta name="description"
         content="Keeping Preston, Soda Springs and Fish Haven Communities know what's happening in the sky!">
 
@@ -22,101 +22,102 @@
 
         <div id="siteTitle">
             <h1>SwullockingToday.com</h1>
-        
 
 
-        <h2><i>"Why look up when you have us?!?"</i> </h2>
-    </div>
+
+            <h2><i>"Why look up when you have us?!?"</i> </h2>
+        </div>
 
     </header>
 
 
     <nav>
-        <ul class="navigation">
+        <ul id="primaryNav" class="navigation">
             <li><a href="#" class="Menu" onclick="toggleMenu()">&#9776;Menu</a></li>
-            <li class="hide"><a href="#" title="home/">Home</a></li>
-            <li class="hide"><a href="#" title="preston/">Preston</a></li>
-            <li class="hide"><a href="#" title="sodasprings/">Soda Springs</a></li>
-            <li class="hide"><a href="#" title="fishhaven/">Fish Haven</a></li>
-            <li class="hide"><a href="#" title="stormcenter/">Storm Center</a></li>
-            <li class="hide"><a href="#" title="gallery-7.html">Gallery</a></li>
+            <li><a href="index.html" title="Home"></a>Home</a></li>
+            <li><a href="preston.html" title="Preston">Preston</a></li>
+            <li><a href="sodasprings.html" title="Soda Springs">Soda Springs</a></li>
+            <li><a href="fishhaven.html" title="Fishhaven">Fish Haven</a></li>
+            <li><a href="stormcenter.html" title="Stormcenter" class="active">Storm Center</a></li>
+            <li><a href="gallery.html" title="Gallery">Gallery</a></li>
         </ul>
     </nav>
 
 
-    
 
-       
 
-        <main>
-            <h1>Report-A-Storm</h1>
-                
+
+
+    <main>
+        <h1>Report-A-Storm</h1>
+
         <form method="get" action="thanks.html">
-            
+
             <fieldset>
-            <legend>Storm Details</legend>
-            <label class="top">Full Name*<input type="text" name="fname" pattern="[A-Za-z ]{5,}" required></label>
-            <label class="top">Email<input type="email" name="email" placeholder="yourmom@gmail.com"></label>
-            <label class="top">Phone*<input type="tel" name="phone" placeholder="555-1212" required></label>
-            <label class="top">Zip Code*<input type="text" pattern="[0-9]{5}" required></label>
-            <label class="top">Storm Date<input type="date" name="date"></label>
-        
+                <legend>Storm Details</legend>
+                <label class="top">Full Name*<input type="text" name="fname" pattern="[A-Za-z ]{5,}" required></label>
+                <label class="top">Email<input type="email" name="email" placeholder="yourmom@gmail.com"></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="555-1212" required></label>
+                <label class="top">Zip Code*<input type="text" pattern="[0-9]{5}" required></label>
+                <label class="top">Storm Date<input type="date" name="date"></label>
 
-         
-            <label class="top">Storm Type
-                <select name="subject">
+
+
+                <label class="top">Storm Type
+                    <select name="subject">
                         <option value="">Please Select &#9662;</option>
-                    <option value="hail"> Hail</option>
-                    <option value="fflood"> Flash Flood</option>
-                    <option value="hurricane"> Hurricane</option>
-                    <option value="tstorm"> Thunder Storm</option>
-                    <option value="tornado"> Tornado</option>
-                    <option value="catsdogs"> Raining Cats and Dogs</option>
-                    <option value="monsoon"> Monsoon</option>
-                    <option value="typhoon"> Typhoon</option>
-                    <option value="drizzle"> Drizzle</option>
+                        <option value="hail"> Hail</option>
+                        <option value="fflood"> Flash Flood</option>
+                        <option value="hurricane"> Hurricane</option>
+                        <option value="tstorm"> Thunder Storm</option>
+                        <option value="tornado"> Tornado</option>
+                        <option value="catsdogs"> Raining Cats and Dogs</option>
+                        <option value="monsoon"> Monsoon</option>
+                        <option value="typhoon"> Typhoon</option>
+                        <option value="drizzle"> Drizzle</option>
 
-    
-                </select>
-    
-            </label>
-        
-            <label class="slider" for="rating">Storm Severity:</label>
-		            <input type="range" id="rating" value="5"  min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-		            <span id="ratingvalue">5</span><br>
 
-		            
-                    <label class="top">Storm Region
-                        <select name="subject">
-                                <option value="">Select Region &#9662;</option>
-                          <option value="preston">Preston</option>
-                            <option value="scity"> Sugar City</option>
-                            <option value="fhaven"> Fish Haven</option>
-                         
-                        
-            
-            
-                        </select>
-                    </label>
-                     
-                        <label>User In-Danger Level:</label>
-                 
-                        <label><input type="radio" name="wth" value="YES">YES</label>
-                        <label><input type="radio" name="wth" value="NO">NO</label>
-                        <label><input type="radio" name="wth" value="MAYBE"> MAYBE / Too Wussy to find out!</label>
-                       
+                    </select>
 
-                        
-                  
-                 
-                          
-                        
-                        <label class="top">Addiitonal Information</label>
-                        <textarea rows="4" cols="50" name="ainfo">
+                </label>
+
+                <label class="slider" for="rating">Storm Severity:</label>
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)"
+                    onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span><br>
+
+
+                <label class="top">Storm Region
+                    <select name="subject">
+                        <option value="">Select Region &#9662;</option>
+                        <option value="preston">Preston</option>
+                        <option value="scity"> Sugar City</option>
+                        <option value="fhaven"> Fish Haven</option>
+
+
+
+
+                    </select>
+                </label>
+
+                <label>User In-Danger Level:</label>
+
+                <label><input type="radio" name="wth" value="YES">YES</label>
+                <label><input type="radio" name="wth" value="NO">NO</label>
+                <label><input type="radio" name="wth" value="MAYBE"> MAYBE / Too Wussy to find out!</label>
+
+
+
+
+
+
+
+                <label class="top">Addiitonal Information</label>
+                <textarea rows="4" cols="50" name="ainfo">
                             </textarea>
 
-                    <input type="submit" name="SUBMIT">
-            
+                <input type="submit" name="SUBMIT">
+
 
             </fieldset>
         </form>
@@ -125,18 +126,14 @@
 
 
     <footer>
-        <p> @2019 | SwullockingToday.com | Attributions | William Cox |
-
+        <p> @2019 | SwullockingToday.com | Attributions | William Cox | <span id="cdate"></span>
         </p>
-
-        <p id="cdate">
-       
-        </p>
+        <p> All weather data courtesy of Open Weather |
+            <a href="https://openweathermap.org">www.openweathermap.com</a></p>
 
     </footer>
 
     <script src="js/currentdate.js"></script>
-    <script src="js/windchill.js"></script>
     <script src="js/hamburger.js"></script>
     <script src="js/adjustrating.js"></script>
 

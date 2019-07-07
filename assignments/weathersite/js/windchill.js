@@ -1,11 +1,12 @@
 
 /*function wchillnow() {} */
 
-var temp = document.getElementById('hTemp').innerHTML ;
+setTimeout(function(){}, 2000);
+var temp = document.getElementById('hTemp').innerHTML;
 var wind = document.getElementById('wSpeed').innerHTML;
 
 
-var wiChill=35.74 + 0.6215*hTemp +(0.4275*hTemp - 35.75)*Math.pow(wSpeed,0.16);
+var wChill=35.74 + 0.6215*hTemp +(0.4275*hTemp - 35.75)*Math.pow(wSpeed,0.16);
 
 
 document.getElementById('wiChill').innerHTML = wChill;

@@ -32,14 +32,14 @@
 
 
     <nav>
-        <ul class="navigation">
+        <ul id="primaryNav" class="navigation">
             <li><a href="#" class="Menu" onclick="toggleMenu()">&#9776;Menu</a></li>
-            <li class="hide"><a href="index.html" title="Home">Home</a></li>
-            <li class="hide"><a href="preston.html" title="Preston">Preston</a></li>
-            <li class="hide"><a href="sodasprings.html" title="Soda Springs">Soda Springs</a></li>
-            <li class="hide"><a href="fishhaven.html" title="Fishhaven">Fish Haven</a></li>
-            <li class="hide"><a href="stormcenter.html" title="Stormcenter">Storm Center</a></li>
-            <li class="hide"><a href="gallery.html" title="Gallery">Gallery</a></li>
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="preston.html" title="Preston">Preston</a></li>
+            <li><a href="sodasprings.html" title="Soda Springs">Soda Springs</a></li>
+            <li><a href="fishhaven.html" title="Fishhaven">Fish Haven</a></li>
+            <li><a href="stormcenter.html" title="Stormcenter">Storm Center</a></li>
+            <li><a href="gallery.html" title="Gallery">Gallery</a></li>
         </ul>
     </nav>
 
@@ -47,12 +47,18 @@
     <main>
 
         <h3>TOWN INFO</h3>
-        <section id="tdata">
-     
+        <div class="twn-container">
+        <section class="t1" id="tdata">
+                <img src="images/town_1.jpg" alt="Town of Fish Haven">
+                <img src="images/town_2.jpg" alt="Town of Preston">
+                <img src="images/town_3.jpg" alt="Town of Soda Springs">
+
+
 
 
 
         </section>
+    </div>
     </main>
 
 
@@ -77,21 +83,17 @@
 
 
     <footer>
-        <p> @2019 | SwullockingToday.com | Attributions | William Cox |
-
+        <p> @2019 | SwullockingToday.com | Attributions | William Cox | <span id="cdate"></span>
         </p>
+        <p> All weather data courtesy of Open Weather |
+            <a href="https://openweathermap.org">www.openweathermap.com</a></p>
 
-        <p id="cdate">
 
-           
-           
-     
-        </p>
     </footer>
 
     <script src="js/currentdate.js"></script>
-    <script src="js/towndata.js"></script>
     <script src="js/hamburger.js"></script>
+    <script src="js/towndata.js"></script>
 
 
 </body>

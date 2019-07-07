@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Weather for BFE - SwullockingToday.com</title>
+    <title>Weather for Fish Haven - SwullockingToday.com</title>
     <meta name="description"
         content="Keeping Preston, Soda Springs and Fish Haven Communities know what's happening in the sky!">
 
@@ -22,11 +22,11 @@
 
         <div id="siteTitle">
             <h1>SwullockingToday.com</h1>
-        
 
 
-        <h2><i>"Why look up when you have us?!?"</i> </h2>
-    </div>
+
+            <h2><i>"Why look up when you have us?!?"</i> </h2>
+        </div>
 
     </header>
 
@@ -34,93 +34,97 @@
     <nav>
         <ul id="primaryNav" class="navigation">
             <li><a href="#" class="Menu" onclick="toggleMenu()">&#9776;Menu</a></li>
-            <li><a href="#" title="index.html/">Home</a></li>
-            <li><a href="#" title="preston.html/">Preston</a></li>
-            <li><a href="#" title="sodasprings.html/">Soda Springs</a></li>
-            <li><a href="#" title="fishhaven.html/">Fish Haven</a></li>
-            <li><a href="#" title="stormcenter.html/">Storm Center</a></li>
-            <li><a href="#" title="gallery.html/">Gallery</a></li>
+            <li><a href="index.html" title="Home"></a>Home</a></li>
+            <li><a href="preston.html" title="Preston">Preston</a></li>
+            <li><a href="sodasprings.html" title="Soda Springs">Soda Springs</a></li>
+            <li><a href="fishhaven.html" title="Fishhaven" class="active">Fish Haven</a></li>
+            <li><a href="stormcenter.html" title="Stormcenter">Storm Center</a></li>
+            <li><a href="gallery.html" title="Gallery">Gallery</a></li>
         </ul>
     </nav>
-
 
     <main>
 
         <h2>Fish Haven</h2>
         <div class="hero">
 
-                <img src="images/hero_small.jpg" alt="Preston Meadows"  srcset="images/hero_small.jpg 400w, images/hero_large.jpg 800w" sizes="100vw">
+            <img src="images/hero_small_3.jpg" alt="Preston Meadows"
+                srcset="images/hero_small_3.jpg 400w, images/hero_large_3.jpg 800w" sizes="100vw">
 
             <section class="summary">
                 <h4>Weather Summary</h4>
- 
+
                 <table style="width:70%">
-                      <tr>
-                            <td>Currently</td>
-                            <td>Temp.</td>
-                            <td>High</td>
-                            <td>Humidity</td>
-                            <td>Wind Speed</td>
-                            <td>Wind Chill</td>
-                          </tr>
-                          <tr>
-                                  <td><span id="cCond"></span></td>
-                                  <td><span id="cTemp">&deg;</span></td>
-                                  <td><span id="hTemp">&deg;</span></td>
-                                  <td><span id="humidity">%</span></td>
-                                  <td><span id="wSpeed">MPH</span></td>
-                                  <td><span id="wChill">&deg;</span></td>
-                                </tr>
-                  </table>
+                    <tr>
+                        <td>Currently</td>
+                        <td>Temp.</td>
+                        <td>High</td>
+                        <td>Humidity</td>
+                        <td>Wind Speed</td>
+                        <td>Wind Chill</td>
+                    </tr>
+                    <tr>
+                        <td><span id="cCond"></span></td>
+                        <td><span id="cTemp">&deg;</span></td>
+                        <td><span id="hTemp">&deg;</span></td>
+                        <td><span id="humidity">%</span></td>
+                        <td><span id="wSpeed">MPH</span></td>
+                        <td><span id="wiChill">&deg;</span></td>
+                    </tr>
+                </table>
             </section>
         </div>
 
         <div class="forecast hide1">
-        <h2>5 day Forecast</h2><br>
-        
-        
-        <table style="width:100%">
-            
-            <tr>
-              <td>Monday</td>
-              <td>Tuesday</td>
-              <td>Wednesday</td>
-              <td>Thursday</td>
-              <td>Friday</td>
-            </tr>
-            <tr>
-                <td><img id="fcIcon1"  alt="desc01"></td>
-                <td><img id="fcIcon2"  alt="desc02"></td>
-                <td><img id="fcIcon3"  alt="desc03"></td>
-                <td><img id="fcIcon4"  alt="desc04"></td>
-                <td><img id="fcIcon5"  alt="desc04"></td>
+            <h2>5 day Forecast</h2><br>
+
+
+            <table style="width:100%">
+
+                <tr>
+                    <td>Day 1</td>
+                    <td>Day 2</td>
+                    <td>Day 3</td>
+                    <td>Day 4</td>
+                    <td>Day 5</td>
                 </tr>
-            <tr>
-                <td><span id="fTemp1"></span></td>
-                <td><span id="fTemp2"></span></td>
-                <td><span id="fTemp3"></span></td>
-                <td><span id="fTemp4"></span></td>
-                <td><span id="fTemp5"></span></td>
-            </tr>
-          </table>
+                <tr>
+                    <td><img id="fcIcon1" alt="desc01"></td>
+                    <td><img id="fcIcon2" alt="desc02"></td>
+                    <td><img id="fcIcon3" alt="desc03"></td>
+                    <td><img id="fcIcon4" alt="desc04"></td>
+                    <td><img id="fcIcon5" alt="desc04"></td>
+                </tr>
+                <tr>
+                    <td><span id="fTemp1"></span></td>
+                    <td><span id="fTemp2"></span></td>
+                    <td><span id="fTemp3"></span></td>
+                    <td><span id="fTemp4"></span></td>
+                    <td><span id="fTemp5"></span></td>
+                </tr>
+            </table>
         </div>
 
-          
+        <section id="events">
+                <h2> Upcoming events in Preston</h2>
+
+            </section>
+
 
     </main>
 
     <article>
-        
-        <h3> Why is looking directly into the sun bad?
-        </h3> 
-        <p> Author : Ray Charles
+
+        <h3> Why a farmers tan is just as sexy as a full body tan.
+        </h3>
+        <p> Author : Larry the Cable Guy
         </p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum urna dui.
             Ut imperdiet facilisis sapien. Nunc ultrices sem eget ligula hendrerit pulvinar non et tellus.
             Ut dignissim vel ipsum sagittis faucibus. Aenean iaculis eleifend nulla id rhoncus.
             Cras velit leo maximus et finibus a molestie eget quam.
         </p>
-        <img src="images/blind1.jpg" alt="HE LOOKED!"><br>
+        <img src="images/larry_1.jpg" alt="larry the Cable Guy"><br>
     </article>
 
     <p></p><br><br>
@@ -146,20 +150,17 @@
 
 
     <footer>
-        @2019 | SwullockingToday.com | Attributions | William Cox 
-        <p> All weather data courtesy of Open Weather | 
-            <a href ="https://openweathermap.org">www.openweathermap.com</a></p>
-        
-
-        <p id="cdate">
+        <p> @2019 | SwullockingToday.com | Attributions | William Cox | <span id="cdate"></span>
         </p>
 
+        <p> All weather data courtesy of Open Weather |
+            <a href="https://openweathermap.org">www.openweathermap.com</a></p>
     </footer>
 
     <script src="js/currentdate.js"></script>
-    <script src="js/windchill.js"></script>
     <script src="js/weatherapi.js"></script>
     <script src="js/forecastapi_fh.js"></script>
+    <script src="js/towndata_events.js"></script>
     <script src="js/hamburger.js"></script>
 
 

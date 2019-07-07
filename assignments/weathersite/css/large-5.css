@@ -33,11 +33,11 @@
         box-shadow: 0 0 50px #333;
         }
 
-    .tdata {
+    #tdata {
 
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            background-color: DodgerBlue;
+            background-color:#AFEEEE;
             box-shadow: 0 0 50px #333;
         }  
 
@@ -56,6 +56,10 @@
         background-color: #C4DBF6;
     }
 
+    table img {
+        float: none;
+        margin: auto;
+    }
 
     nav li {
         display: inline;
