@@ -1,0 +1,109 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+/*
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;}
+
+nav {
+    background-color: #aa0000;
+    font-family: Verdana, sans-serif;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: .5em;}
+
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    border-top: 1px solid rgba(0,0,0,0.3);}
+
+nav ul li.active a{background-color: rgba(0,0,0,0.2); color: #fff;}
+
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
+nav ul.hide {diplay:none;}
+*/
+
+header, main, footer {     
+   color: green;
+   margin-left: 0 auto;
+   margin-right: 0 auto;
+   width: 100%;
+  /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    
+    background-color: #9afdfe; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+}
+
+.weathersummary{
+    flex-shrink: 1;
+    flex-basis: auto;
+    display: flex;
+    border:3px solid;
+    text-decoration-line: underline;
+    background-color: aqua;
+    flex-direction: row;
+    
+
+}
+
+.highlow{
+    align-self: center;
+    flex-direction: column;
+    
+}
+
+.sidebar1{
+    padding-left:40px;
+    align-content: center;
+    align-self: center;
+    
+}
+    
+    
+}
+
+.franklinimage {
+    width= 100%;
+    align-self: flex-start;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; 
+    
+   section.forecast { display: none; } /* show the 10-day forecast with the medium view and up */ 
+    
+    
+}
+
+
+
+
+
+

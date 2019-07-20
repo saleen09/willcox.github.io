@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-us">
+            
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mountain Spoke Contact Us</title>
+  <meta name="author" content="Ken Strobell">
+  <meta name="the contact us page for Mountain Spoke." content="Contact Us">
+ 	
+	
+	
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="main.css" rel="stylesheet">   <!-- default styles - small/phone views -->
+  <link href="medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="large-5.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+  <link href="small.css" rel="stylesheet">   <!-- small views --> 	
+
+    
+    <header>
+    	  
+    <img src="bluebike1logo.jpg" alt="TheMountainSpoke site logo" width="20%" height="70em" >
+    <h1>The Mountain Spoke</h1>
+    <div class="subheading">Best Bikes this side of the Mississippi!</div>
+	
+  </header>
+    
+
+<body>
+	
+	<nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+	 <ul id="primaryNav" class="hide"> 
+	    <li><a class="active" href="https://str17024.github.io/themountainspoke/">Home</a></li>
+	  <li><a href="adventuretours.html">Adventure Tours</a></li>
+	  <li><a href="events.html">Events</a></li>
+	  <li><a href="sales.html">Sales</a></li>
+	  <li><a href="services.html">Service</a></li>
+	  <li><a href="contactus.html">Contact Us</a></li>
+         </ul>
+</nav>	
+	
+	
+	
+	
+<main>
+            <h2>Contact Us</h2>
+            <form action="thanks.html" name="w-form" id="w-form">
+                <fieldset>
+                    <legend><span>Please fill out the information below.</span></legend>
+                    <label><span>Full Name:</span><input name="fullname" type="text" value="" pattern="[a-zA-Z .-_]{5,99}" placeholder="Your Full Name" required></label>
+                    <label><span>Email:</span><input name="email" type="email" value="" placeholder="yourname@gmail.com"></label>
+                    <label><span>Phone Number:</span><input name="phone" type="tel" value="" placeholder="1112223333" pattern="[0-9]{10,20}" required></label>
+                    <label><span>Zip Code:</span><input name="zipcode" type="number" value="" placeholder="12321" required></label>
+                    <label><span>Questions or Comments:</span><textarea name="message" rows="10" cols="28"></textarea></label>
+                </fieldset>
+                    <input type="submit" value="Submit" class="submitBt">
+            </form>
+    
+    <div class="googlemaps">
+    <!-- google maps-->
+        <p>Here is where we are located at in Bozeman. Stop on by!</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9314410355164!2d-111.09290618414747!3d45.672276627555625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1522430703911" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        
+    </div>
+        </main>
+
+
+
+<footer>
+            <aside>
+                3950 Valley Commons Drive<br>
+                Boseman, MT 12321<br>
+                (111) 222 3333 <br>
+                contactus@themountainspoke.com
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved &vert; The Mountian Spoke &vert; <span id="currentdate"></span></p>
+        </footer>
+
+
+
+        <script src="hamburger.js"></script>
+        <script src="currentdate.js"></script>
+
+ </body>
+</html>

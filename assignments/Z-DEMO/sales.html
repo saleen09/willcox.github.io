@@ -1,0 +1,231 @@
+
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mountain Spoke Sales Page</title>
+  <meta name="author" content="Ken Strobell">
+  <meta name="the sales page for The Mountain Spoke." content="Our sales page">
+ 	
+	
+	
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="maingallery.css" rel="stylesheet">   <!-- default styles - small/phone views -->
+  <link href="main.css" rel="stylesheet">   <!-- default styles - small/phone views -->
+  <link href="medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="large-5.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="small.css" rel="stylesheet">   <!-- small views --> 	
+    <link rel="stylesheet" href="stylez.css">
+</head>
+<body>
+
+  
+    
+    
+  <header>
+    	  
+    <img src="bluebike1logo.jpg" alt="TheMountainSpoke site logo" width="20%" height="70em" >
+    <h1>The Mountain Spoke</h1>
+    <div class="subheading">Best Bikes this side of the Mississippi!</div>
+	
+  </header>
+
+  <!-- site navigation use placeholder references -->
+	
+</br>
+</br>
+</br>
+</br>
+
+  <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+	 <ul id="primaryNav" class="hide"> 
+	    <li><a class="active" href="https://str17024.github.io/themountainspoke/">Home</a></li>
+	  <li><a href="adventuretours.html">Adventure Tours</a></li>
+	  <li><a href="events.html">Events</a></li>
+	  <li><a href="sales.html">Sales</a></li>
+	  <li><a href="services.html">Service</a></li>
+	  <li><a href="contactus.html">Contact Us</a></li>
+         </ul>
+</nav>		
+    
+    
+ <div id="main">		
+  
+    
+  <main>
+	  <!--<p>
+    <h2 text-align="center">The Mountain Spoke Sales</h2>
+	  -->
+	  
+ </div>
+
+	  <section class="leading">
+        <p class="leading-bigtext">Hello!</p>
+        <p class="leading-text">And welcome to The Mountain Spoke Sales Page! Home of the best bike sales ever!</p>
+      </section>
+      <section class="cards">
+        <article>
+          <img class="article-img" src="bikesale1.jpeg" alt="amazing bike " />
+          <h1 class="article-title">
+            The Blue Flame
+          </h1>
+            <div class="bikesales">
+          The Blue Flame is amazing! It is so fast, you already bought it! Only $5595
+          </div>
+        </article>
+        <article>
+          <img class="article-img" src="bikesale2.jpg" alt="super bike " />
+          <h1 class="article-title">
+            The Smasher
+          </h1>
+            <div class="bikesales">
+          The Smasher! Enough Said! Only $3595
+          </div>
+        </article>
+        <article>
+          <img class="article-img" src="bikesale3.jpg" alt="fun bike " />
+          <h1 class="article-title">
+            The Blue Wind
+          </h1>
+            <div class="bikesales">
+          The Blue Wind is lightning fast! Mountains will fear you! Only $2995
+          </div>
+        </article>
+        <article>
+          <img class="article-img" src="bikesale4.jpg" alt="awesome bike " />
+          <h1 class="article-title">
+            The Speedster
+          </h1>
+            <div class="bikesales">
+          The Speedster is Fast... Very fast, and fun! Only $2195
+          </div>
+        </article>
+          <article>
+          <img class="article-img" src="bikesale5.jpg" alt="wonderful bike " />
+          <h1 class="article-title">
+            Yellow Jacket
+          </h1>
+              <div class="bikesales">
+          The Yellow Jacket is amazing! Fast, yellow, cool and fun! Only $1595
+          </div>
+        </article>
+        <article>
+          <img class="article-img" src="bikesale6.jpg" alt="great bike " />
+          <h1 class="article-title">
+            The Cruiser
+          </h1>
+            <div class="bikesales">
+          The cruiser is amazing! Fast, economical and fun! Only $595
+          </div>
+        </article>
+          
+      </section>
+	  
+	  
+
+  </main>
+
+      
+
+
+<div>
+
+
+</div>
+
+<p>
+    
+	    <p>
+      
+	    </p>
+	    </br>
+       </br>
+      <p class="town-article">
+	      </br>
+		
+        <!--<img src="sunnydaylong.jpeg" alt="long sunny day pic" width="10%" height="100em"> -->
+		
+
+
+        <p>
+        <!--<div class="town-articletext">    
+        !!Short article content placeholder. But imagine the amazing articles that section will hold!! Like google api fonts.
+        </div>    -->
+        
+
+  </main>
+    
+</br>
+</br>
+</br>
+</br>
+<p>
+</body>
+  <footer>
+            <aside>
+                3950 Valley Commons Drive<br>
+                Boseman, MT 12321<br>
+                (111) 222 3333 <br>
+                contactus@themountainspoke.com
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved &vert; The Mountian Spoke &vert; <span id="currentdate"></span></p>
+        </footer>
+
+  
+
+  <script src="hamburger.js"></script>
+  <script src="currentdate.js"></script>
+  <script src="windchill.js"></script>
+  <script src="windchill2.js"></script>
+
+<!--
+     <script> 
+            var article = document.querySelector('article');
+            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+            var request = new XMLHttpRequest();
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
+            request.onload = function() {
+                var towns = request.response;
+                showGreenville(towns);
+            }
+            function showGreenville(jsonObj) {
+                var towns = jsonObj['towns'];
+                var myH3 = document.createElement('h3');
+                var myPara1 = document.createElement('p');
+                var myPara2 = document.createElement('p');
+                var myPara3 = document.createElement('p');
+                var myPara4 = document.createElement('p');
+                var myPara5 = document.createElement('p');
+                var myList = document.createElement('ul');
+                
+                myH3.textContent = towns[1].name;
+                myPara1.textContent = 'Motto: ' + towns[1].motto;
+                myPara2.textContent = 'Year Founded: ' + towns[1].yearFounded;
+                myPara3.textContent = 'Current Population: ' + towns[1].currentPopulation;
+                myPara4.textContent = 'Average Rainfall: ' + towns[1].averageRainfall;
+                myPara5.textContent = 'Events: ';
+
+                var events = towns[1].events;
+                for (var j = 0; j < events.length; j++) {
+                  var listItem = document.createElement('li');
+                  listItem.textContent = events[j];
+                  myList.appendChild(listItem);
+                }
+                article.appendChild(myH3);
+                article.appendChild(myPara1);
+                article.appendChild(myPara2);
+                article.appendChild(myPara3);
+                article.appendChild(myPara4);
+                article.appendChild(myPara5);
+                article.appendChild(myList);
+            }
+        </script>
+-->
+</html>
