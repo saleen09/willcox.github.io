@@ -52,23 +52,44 @@
   
     
   <main>
-	<!--  <p>
-    <h2 text-align="center">The Mountain Spoke Events</h2>
-	  -->
+
 	  
-      <h2>Reservations<br> Please fill this out.</h2>
+      <h2>Reservations</h2>
             <form action="thanks.html" name="w-form" id="w-form">
                 <fieldset>
                     
                     <div>
-        <label for="adventure" required>Select Adventure</label>    
-		<input name="adventure" list="adventurelist" placeholder="Select One">
-		<datalist id="adventurelist">
-      <option value="Cycle the Continental Divide">
-  	  <option value="Bobs Trail">
-      <option value="Teds Trail">
-      <option value="Thunderstorm Trail">
-      <option value="Tornado Alley">
+        <label for="location" required>Select Location</label>    
+		<input name="Location" list="locationlist" placeholder="Select One">
+		<datalist id="locationlist">
+      <option value="Pocatello, ID">
+  	  <option value="Rexburg, ID">
+      <option value="Billings, MT">
+      <option value="Spokane, WA">
+		</datalist>
+    
+    </div>
+
+    <div>
+        <label><span>Requested Date of Arrival</span><input name="Date" type="date" value="" placeholder="01/03/2005" pattern="[0-9]{10,20}" required></label>
+    </div>
+
+    <div>
+        <label><span>Requested Date of Departure</span><input name="Date" type="date" value="" placeholder="01/03/2005" pattern="[0-9]{10,20}" required></label>
+    </div>
+    <div>
+        <label><span>Requested Number of Rooms</span><input name="Rooms" type="number" value="" placeholder="1" pattern="[0-9]{10,20}" required></label>
+    </div>
+
+                  
+    <div>
+        <label for="rtype" required>Select Room Type</label>    
+		<input name="rtype" list="rtypelist" placeholder="Select One">
+		<datalist id="rtypelist">
+      <option value="Single Queen">
+  	  <option value="Single King">
+      <option value="Double Queen">
+      <option value="Double King">
 		</datalist>
     
     </div>
@@ -137,7 +158,6 @@
                     <label><span>Full Name:</span><input name="fullname" type="text" value="" pattern="[a-zA-Z .-_]{5,99}" placeholder="Your Full Name" required></label>
                     <label><span>Email:</span><input name="email" type="email" value="" placeholder="yourname@gmail.com"></label>
                     <label><span>Phone Number:</span><input name="phone" type="tel" value="" placeholder="111-222-3333" pattern="[0-9]{10,20}" required></label>
-                    <label><span>Date of Birth:</span><input name="phone" type="tel" value="" placeholder="01-03-2005" pattern="[0-9]{10,20}" required></label>
                     <label><span>Zip Code:</span><input name="zipcode" type="number" value="" placeholder="12321" required></label>
                     <label><span>Special Accomodations or Comments:</span><textarea name="message" rows="10" cols="28"></textarea></label>
                     
@@ -146,21 +166,16 @@
                     <input type="submit" value="Submit" class="submitBt">
             </form>
     
-    <div class="googlemaps">
-    <!-- google maps-->
-        <p>Here is where we are starting the adventure from. Lets roll!</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9314410355164!2d-111.09290618414747!3d45.672276627555625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1522430703911" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        
-    </div>
+
 </body>
 
 <footer>
     <aside>
       Temple Inn and Suites <br>
-      4800 Montgomery Ln #300<br>
+      4800 Montgomery Lane #300<br>
       Bethesda, MD 20814<br>
       (999)-555-1212<br>
-      contact@thetemplestay.com
+      <a href="mailto:contact@thetemplestay.com">contact@thetemplestay.com</a>
     </aside>
     <p> @2019 | TheTempleStay.com | All Rights Reserved 	&#174; | &#169; | &#8482; |<span id="cdate"></span>
     </p>
