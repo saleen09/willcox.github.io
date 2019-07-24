@@ -1,5 +1,5 @@
 
-var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+var requestURL = 'https://github.com/saleen09/willcox.github.io/blob/master/assignments/Z-DEMO/temples.json';
 
 var section = document.getElementById('tdata');
 var request = new XMLHttpRequest();
@@ -11,7 +11,7 @@ request.send();
 request.onload = function () {
     var tdata = request.response;
     var towns = tdata['towns'];
-    var townNames = ["Fish Haven", "Soda Springs", "Preston"];
+    var townNames = ["Pocatello, ID", "Spokane, ID", "Billings, MT", "Rexburg, ID"];
  
     for (var i = 0; i < towns.length; i++) {
         for (var x = 0; x < townNames.length; x++){
@@ -23,13 +23,16 @@ request.onload = function () {
                 var myTown3 = document.createElement('p');
                 var myTown4 = document.createElement('p');
                 var myTown5 = document.createElement('p');
+                var myTown6 = document.createElement('p');
                 /*var myEvent = document.createElement('ul'); */
 
                 myH2.textContent = towns[i].name;
-                myTown1.textContent = 'Year Founded: ' + towns[i].yearFounded;
-                myTown2.textContent = 'Motto: ' + towns[i].motto;
-                myTown3.textContent = 'Current Population:' + towns[i].currentPopulation;
-                myTown4.textContent = 'Average Rainfall:' + towns[i].averageRainfall;
+                myTown1.textContent = 'Address: ' + towns[i].address;
+                myTown2.textContent = 'Telephone: ' + towns[i].telephone;
+                myTown3.textContent = 'Site:' + towns[i].site;
+                myTown4.textContent = 'Exterior Finish:' + towns[i].exteriorFinish;
+                myTown5.textContent = 'Ordinance Room:' + towns[i].ordinanceRoom;
+                myTown6.textContent = 'Floor Area:' + towns[i].floorArea;
                 /*myTown5.textContent = 'Events:' ;
 
                 var events = towns[i].events;
@@ -46,6 +49,7 @@ request.onload = function () {
                 myArticle.appendChild(myTown3);
                 myArticle.appendChild(myTown4);
                 myArticle.appendChild(myTown5);
+                myArticle.appendChild(myTown6);
                /* myArticle.appendChild(myEvent); */
     
                 section.appendChild(myArticle);

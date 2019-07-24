@@ -7,8 +7,12 @@
     "site": "12.77 acres",
     "exteriorFinish": "Granite",
     "ordinanceRoom": "Four ordinance rooms (stationary) and four sealing",
-    "floorArea": "67,696 square feet"
-   
+    "floorArea": "67,696 square feet",
+    "events" : [
+      "Announcement - 2 April 2017",
+      "GroundBreaking - 16 March 2019 by Wilford W. Andersen",
+      "Dedication - 16 March 2019 by Wilford W. Andersen "
+    ]
   },
   {
     "name": "Spokane, ID",
@@ -17,8 +21,12 @@
     "site": "2 acres",
     "exteriorFinish": "Granite",
     "ordinanceRoom": "Two ordinance rooms (two-stage progressive) and two sealing",
-    "floorArea": "10,700 square feet"
-
+    "floorArea": "10,700 square feet",
+    "events" : [
+      "Announcement - 13 August 1998",
+      "GroundBreaking - 10 October 1998 by F. Melvin Hammond",
+      "Dedication - 21–23 August 1999 by Gordon B. Hinckley"
+    ]
   },
 
   {
@@ -28,8 +36,12 @@
     "site": "10 acres",
     "exteriorFinish": "Wyoming white dolomite precast concrete",
     "ordinanceRoom": "Two ordinance rooms (two-stage progressive) and three sealing",
-    "floorArea": "33,800 square feet"
-   
+    "floorArea": "33,800 square feet",
+    "events" : [
+      "Announcement - 30 August 1996",
+      "GroundBreaking - 30 March 1998 by Hugh W. Pinnock",
+      "Dedication - 20–21 November 1999 by Gordon B. Hinckley"
+    ]
   },
 
   {
@@ -39,8 +51,12 @@
     "site": "10 acres",
     "exteriorFinish": "Precast concrete panels with white quartz rock finish",
     "ordinanceRoom": "Four ordinance rooms (two-stage progressive) and five sealing",
-    "floorArea": "57,504 square feet"
-  
+    "floorArea": "57,504 square feet",
+    "events" : [
+      "Announcement - 12 December 2003",
+      "GroundBreaking - 30 July 2005 by John H. Groberg",
+      "Dedication - 10 February 2008 by Thomas S. Monson"
+    ]
   }
  ]
 }
