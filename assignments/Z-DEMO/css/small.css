@@ -86,10 +86,7 @@ nav ul.hide {
     display: none;
 }
 
-p #button {
 
-    justify-content: center
-}
 
 h1 {
     display: flex;
@@ -130,6 +127,7 @@ header .subheading {
     background-color: darkred;
     flex-direction: row;
     flex-wrap: wrap;
+    text-align: left;
     
 
 }
@@ -138,21 +136,24 @@ header .subheading {
     align-self: center;
     flex-direction: column;
     
+  
+    
 }
 
 .sidebar1{
-    padding-left:40px;
-    align-content: center;
-    align-self: center;
+    
+    align-content: right;
+    align-self: right;
     
 }
     
-    
 
 
-.franklinimage {
-    height: 100%;
-    width: 50%;
+
+.weathersummary img {
+    height: auto;
+    width: auto;
+    float: right;
     
     
     }
@@ -162,14 +163,59 @@ main {
    border-style: solid;
     
 }
+
 main h2 {
     display: flex;
     font-size: 2.5rem;
     color: #0673BA;
     justify-content: center;
+    border-bottom: #000000
     
     
 }
+
+main hr {
+    border-style: inset;
+    border-width: 2px;
+    border-color: #0673BA;
+  
+    
+
+}
+
+main #button {
+
+    text-align: center;
+    
+}
+main .list1 {
+
+    font-weight:bold;
+    font-style: italic;
+    line-height: 35px;
+    text-align: center;
+
+}
+
+main .list2 {
+
+    padding-top: 30px;
+    line-height: 30px;
+ 
+
+}
+
+main .topic {
+  
+    line-height: 25px;
+}
+
+main .sServices {
+  
+    text-align: left;
+}
+
+
 
 thead {color:black;
     background-color: #7fb989;
@@ -315,10 +361,10 @@ header, main, footer {
      
  }
  
- .sidebar1{
+ .sidebar1 {
      padding-left:40px;
-     align-content: center;
-     align-self: center;
+     align-content: right;
+     align-self: right;
      
  }
      
