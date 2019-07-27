@@ -289,7 +289,7 @@ footer {
 .weathersummary {
     font-size: 1.6em;
     display: flex;
-    border: none;
+    border: 1px;
     background-color: burlywood
     flex-direction: row;
     flex-wrap: wrap;
