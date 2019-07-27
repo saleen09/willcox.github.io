@@ -15,8 +15,8 @@ body {
 header, main, footer {     
    color: firebrick;
    background-color: #ffffff;
-   margin-left: 0 auto;
-   margin-right: 0 auto;
+   margin-left:  auto;
+   margin-right: auto;
    width: 100%;
   /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
@@ -143,14 +143,14 @@ header .subheading {
     
 }
 
-.sidebar1{
+/*.sidebar1{
     
     align-content: right;
     align-self: right;
     
 }
     
-
+*/
 
 
 .weathersummary img {
@@ -369,8 +369,8 @@ form label span {
 
 header, main, footer {     
     color: #000000;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
    /* the comma means apply the following CSS declarations to all of the listed elements */
    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
