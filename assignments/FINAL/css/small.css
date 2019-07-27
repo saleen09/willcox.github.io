@@ -286,7 +286,7 @@ footer {
     padding: 1em 0 1em 0;
 }
 
-.totm {
+.weathersummary {
     font-size: 1.6em;
     display: flex;
     border: 1px;
@@ -300,7 +300,7 @@ footer {
 
 
 
-.totm img {
+.weathersummary img {
     height: auto;
     width: auto;
     float: left;
