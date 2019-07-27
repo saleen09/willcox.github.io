@@ -1,7 +1,7 @@
 
 setTimeout(function(){}, 1000);
 let weatherRequest = new XMLHttpRequest();
-weatherRequest.open("GET", "https://github.com/saleen09/willcox.github.io/blob/master/assignments/Z-DEMO/temples.json", true);
+weatherRequest.open("GET", "https://github.com/saleen09/willcox.github.io/blob/master/assignments/FINAL/temples.json", true);
 weatherRequest.send();
 weatherRequest.onload = function () {
     let weatherData = JSON.parse(weatherRequest.responseText);
