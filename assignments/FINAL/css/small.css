@@ -293,7 +293,7 @@ footer {
     background-color: burlywood;
     flex-direction: row;
     flex-wrap: wrap;
-    text-align: left;
+    text-align: right;
     
 
 }
@@ -304,6 +304,7 @@ footer {
     height: auto;
     width: auto;
     float: left;
+    align-content: center
     
     
     }
