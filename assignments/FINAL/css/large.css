@@ -3,47 +3,79 @@
  @media only screen and (min-width: 775px) {
 
     
-    header h1 {
+header h1 {
         font-size: 5.5em;
     }
     
-    header .subheading {
+header .subheading {
         font-size: 2em;
     }
     
-    nav ul li a {
+nav ul li a {
         padding: 0.8rem 2rem;
     }
     
    
         
-    main > .flexbox {
+main > .flexbox {
         display: flex;
         justify-content: space-around;
         align-items: center;
         align-content: center;
     }
 
-    main img {
+main img {
         float: right;
         background-color: #C4DBF6;
     }
     
-    main h2 {
+main h2 {
         margin: 0.5em 1.75em 0 1.75em;
         padding: 0.3em 0 0 0;
         font-size: 4em;
     }
     
-    main h3 {        
+main h3 {        
         font-size: 1.69em;
     }
     
-    main section p, article.info p, article.info ul li, p.w-story {
+main section p, article.info p, article.info ul li, p.w-story {
         font-size:1.3em;
     }
+
+main p.town-article {
+        font-size: 1.56em;
+    }
+        
+main article.container, main .flexbox, .flexbox1{
+        margin: 0 7em 0 7em;
+    }
     
-    #tdata {
+main article.container img, .flexbox1>img { 
+        padding: 1em;
+    }
+
+    
+main > .grid {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2em 7em 0;
+    }
+
+table {
+        font-size: 20px;
+        width: 90%;
+    }
+
+table th, td {
+        border: 0.5px solid black;
+    }
+    
+
+footer {
+        font-size: 1.3em;
+    }
+    
+#tdata {
 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -51,7 +83,7 @@
         /*box-shadow: 0 0 50px #333; */
     }  
 
-    .t-container {
+.t-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         background-color: burlywood;
@@ -59,37 +91,5 @@
         }
         
 
-    
-    table {
-        font-size: 20px;
-        width: 90%;
-    }
-
-    table th, td {
-        border: 0.5px solid black;
-    }
-    
-    main p.town-article {
-        font-size: 1.56em;
-    }
-        
-    main article.container, main .flexbox, .flexbox1{
-        margin: 0 7em 0 7em;
-    }
-    
-    main article.container img, .flexbox1>img { 
-        padding: 1em;
-    }
-    
-    footer {
-        font-size: 1.3em;
-    }
-    
-    main > .grid {
-        grid-template-columns: repeat(3, 1fr);
-        padding: 2em 7em 0;
-    }
-    
- 
     
 }

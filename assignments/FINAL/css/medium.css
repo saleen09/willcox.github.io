@@ -1,32 +1,31 @@
-/* 35em is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
- /*end medium */
+
+
 
 nav {
- 
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3232+0,aa0000+100 */
-background: #ff3232; /* Old browsers */
-background: -moz-linear-gradient(top, #ff3232 0%, #aa0000 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #ff3232 0%,#aa0000 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #ff3232 0%,#aa0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#aa0000',GradientType=0 ); /* IE6-9 */}
+
+background: #ff3232; 
+background: -moz-linear-gradient(top, #ff3232 0%, #aa0000 100%); 
+background: -webkit-linear-gradient(top, #ff3232 0%,#aa0000 100%); 
+background: linear-gradient(to bottom, #ff3232 0%,#aa0000 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#aa0000',GradientType=0 ); }
 
 nav button { 
         display:none;
-    }  /* hamburger button does not need to be shown */
+    }  
     
-    nav #primaryNav{
+nav #primaryNav{
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-around;
         align-items: center;
     }
     
-    nav #primaryNav li{
+nav #primaryNav li{
         flex-grow: 1;
     }
     
-    nav ul li a {
+nav ul li a {
         padding: 0.8rem 0.3rem ;
         border: none;
         border-right: 1px solid rgba(0,0,0,0.3);
@@ -34,63 +33,46 @@ nav button {
         padding: .8rem 1rem;
     }
     
-    nav ul.hide {
+nav ul.hide {
         display: flex;
     }
 
-    header h1 {
+header h1 {
         font-size: 2.9em;
     }
            
-    header .subheading {
+header .subheading {
         font-size: 1.1em;
     }
     
-    main h2 {
+main h2 {
         font-size: 2.2em;
         margin: 1em 1.65em 0 ;
     }
     
-    main h3 {
+main h3 {
         font-size: 1.3em;
     }
     
-    main p, article.info ul li {
+main p, article.info ul li {
         font-size: 1em;
     }
     
-    main section .container1 img {   
+main section .container1 img {   
         margin-left: 4em;
     }
     
-    main section .container1 > div {
+main section .container1 > div {
         margin-left: 4em;
     }
-    
-    #tdata {
 
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        background-color:burlywood
-        /*box-shadow: 0 0 50px #333; */
-    }  
+main > .grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2em 3.6em 0;
+        grid-gap: 2em;
+    }
 
-    .t-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        background-color: burlywood;
-        grid-gap: 50px;
-        }
-        
-    section.forecast { 
-        justify-content: center;
-        align-content: center;
-        display: block;
-        margin: 2em 3.6em 2em 3.6em;
-        padding: 0.2em 0 1em 0;
-    }  /* show the 10-day forecast with the medium view and up */
-
-    table {
+table {
         text-align: center;
         font-family: Calibri, sans-serif;
         font-size: 15px;
@@ -98,34 +80,48 @@ nav button {
         margin: auto;   
     }
 
-    table th, td {
+table th, td {
         border: 0.3px solid black;
     }
     
-   
-      
-    footer {
-        font-size: 0.8em;
-    }
+  
     
-    main > .grid {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 2em 3.6em 0;
-        grid-gap: 2em;
+section.forecast { 
+        justify-content: center;
+        align-content: center;
+        display: block;
+        margin: 2em 3.6em 2em 3.6em;
+        padding: 0.2em 0 1em 0;
     }
-   
-    
-    section.grid {
+
+section.grid {
         grid-template-columns: repeat(3, 1fr);   
     }
-    
-    article.info {
+
+article.info {
         margin: 2em 3.6em 2em 3.6em;
     }
 
-  
-  section.forecast { display: block; }  /* show the 10-day forecast with the medium view and up */
-  
-  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+footer {
+        font-size: 0.8em;
+    }
 
+
+
+
+#tdata {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color:burlywood
+        /*box-shadow: 0 0 50px #333; */
+    }  
+
+.t-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: burlywood;
+        grid-gap: 50px;
+        }
+        
 }

@@ -1,6 +1,12 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+  html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+* { box-sizing: border-box;}  
 
 body {
   font-size: 16px;
@@ -9,22 +15,21 @@ body {
   padding:0;
   font-family: arial, helvetica, sans-serif
 
-  /* Declare the base font-family - from google font api or other */
+  
 }
 
 header, main, footer {     
-   color: firebrick;
+color: #000000;
    background-color: #ffffff;
    margin-left:  auto;
    margin-right: auto;
    width: 100%;
-  /* the comma means apply the following CSS declarations to all of the listed elements */
-  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+
 }
 
 header {
     
-    background-color: #cccc00; 
+    background-color: #ffffff;  
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -32,11 +37,20 @@ header {
 
 }
 
+
 header img {
     width: 170px;
     height: auto;
     float: left;
     max-width : 100%;
+}
+
+
+header .subheading {
+    display: flex;
+    font-size: 1.2rem;
+    color: #0673BA;
+    
 }
 
 
@@ -115,51 +129,18 @@ h2 {
     text-align: center;
     
 }
-header .subheading {
-    display: flex;
-    font-size: 1.2rem;
+
+
+h3 {
+    text-align: center;
     color: #0673BA;
-    
 }
 
-.weathersummary{
-    font-size: 1.6em;
-    display: flex;
-    border: none;
-    /*text-decoration-line: underline;*/
-    background-color: darkred;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: left;
-    
-
-}
-
-.highlow{
-    align-self: center;
-    flex-direction: column;
-    
-  
-    
-}
-
-/*.sidebar1{
-    
-    align-content: right;
-    align-self: right;
-    
-}
-    
-*/
 
 
-.weathersummary img {
-    height: auto;
-    width: auto;
-    float: right;
-    
-    
-    }
+
+
+
 
 main {
    border: 2px;
@@ -223,13 +204,132 @@ main img {
     margin: auto;
 }
 
-#tdata {
 
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color:burlywood
-    /*box-shadow:0 0 50px #333;*/
-}    
+thead {color:black;
+    background-color: #7fb989;
+    font-size: 20px;
+    font-weight: bold;
+    }
+    
+
+          
+      
+tr:nth-child(2n+2) {
+    color:black;
+    background-color: #e7f0ed;
+    text-align: center;
+    }
+
+tr:nth-child(2n+3) {
+    color:black;
+    background-color: #e7ffed;
+    text-align: center;
+    
+    }
+
+section.forecast { 
+        display: none; 
+   
+    }
+
+form#w-form {
+        text-align: center;
+        margin-top: 1em; 
+        padding: 0.5em 1em;
+        background-color: burlywood;
+    }
+    
+form fieldset {
+        margin: 1.2em auto;
+        border-radius: 9px;
+    }
+    
+form legend {
+        color: #ffffff;
+        margin-left: 5%;
+        padding: 0.6em;
+        border: 3px solid black;
+        background-color: #55a6ff;
+        border-radius: 0.6em;
+        
+        font-size: 1.2em;
+    }
+    
+form label {
+        justify-content: center;
+        align-content: center;
+        display: block;
+        margin: .9em;
+    }
+    
+form label span {
+        display: block;
+        padding-top: 0.9em;
+        padding-bottom: 0.2em;  
+        font-style: oblique;
+        font-size: 0.9em;
+    }
+
+    
+section.forecast { 
+    display: none; 
+
+}
+
+
+footer {
+    
+    color: #000000;
+    font-size: 1.0em;
+    text-align: center;
+    margin-top: 1.5em;
+    padding: 1em 0 1em 0;
+}
+
+
+.weathersummary{
+    font-size: 1.6em;
+    display: flex;
+    border: none;
+    /*text-decoration-line: underline;*/
+    background-color: darkred;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    
+
+}
+
+
+
+.weathersummary img {
+    height: auto;
+    width: auto;
+    float: right;
+    
+    
+    }
+
+.franklinimage {
+        width: 100%;
+        align-self: flex-start;
+    }
+
+.highlow{
+    align-self: center;
+    flex-direction: column;
+    
+  
+    
+}
+
+.googlemaps{
+    text-align: center;
+    justify-content: center;
+    
+}
+
+    
 
 .t-container {
         display: grid;
@@ -249,7 +349,23 @@ main img {
         
         }
 
-        #tdata.t1  {
+.row1 {
+            color:white;
+            background-color: #99cc00;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+.clearfix:after {
+            content: "";
+            display: table;
+            clear: both; 
+          
+          }
+
+
+
+#tdata.t1  {
 
             display: grid;
             grid-template-columns: 1fr;
@@ -260,62 +376,13 @@ main img {
             background-color: burlywood;
             border: #000;
         }
+#tdata {
 
-thead {color:black;
-    background-color: #7fb989;
-    font-size: 20px;
-    font-weight: bold;
-    }
-    
-.row1 {
-    color:white;
-    background-color: #99cc00;
-    font-size: 20px;
-    font-weight: bold;
-}
-          
-      
-tr:nth-child(2n+2) {
-    color:black;
-    background-color: #e7f0ed;
-    text-align: center;
-    }
-
-tr:nth-child(2n+3) {
-    color:black;
-    background-color: #e7ffed;
-    text-align: center;
-    
-    }
-
-.googlemaps{
-    text-align: center;
-    justify-content: center;
-    
-}
-
-h3 {
-    text-align: center;
-    color: #0673BA;
-}
-
-/*main article p.town-article, p.w-story {
-    padding: 0 1em 1em;
-    word-spacing: 0.2rem;
-    margin-bottom: 0;
-}*/
-
-
-footer {
-    /*background-color: #cccc00;*/
-    color: #000000;
-    font-size: 1.0em;
-    text-align: center;
-    margin-top: 1.5em;
-    padding: 1em 0 1em 0;
-}
-
-
+            display: grid;
+            grid-template-columns: 1fr;
+            background-color:burlywood
+           
+        }
 
 #franklinevents {
     justify-content: center;
@@ -325,117 +392,9 @@ footer {
 }
 
 
-form#w-form {
-    text-align: center;
-    margin-top: 1em; 
-    padding: 0.5em 1em;
-    background-color: burlywood;
-}
 
-form fieldset {
-    margin: 1.2em auto;
-    border-radius: 9px;
-}
 
-form legend {
-    color: #ffffff;
-    margin-left: 5%;
-    padding: 0.6em;
-    border: 3px solid black;
-    background-color: #55a6ff;
-    border-radius: 0.6em;
-    
-    font-size: 1.2em;
-}
 
-form label {
-    justify-content: center;
-    align-content: center;
-    display: block;
-    margin: .9em;
-}
 
-form label span {
-    display: block;
-    padding-top: 0.9em;
-    padding-bottom: 0.2em;  
-    font-style: oblique;
-    font-size: 0.9em;
-}
 
-/* Other Class Selectors */
 
-/* FROM SMALL MERGE */
-
-header, main, footer {     
-    color: #000000;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-   /* the comma means apply the following CSS declarations to all of the listed elements */
-   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
- }
- 
- header {
-     
-     background-color: #ffffff; 
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-around;
-     align-items: center;
-     align-content: center;
- 
- }
- 
- .weathersummary{
-     flex-shrink: 1;
-     flex-basis: auto;
-     display: flex;
-     border:3px solid;
-     /*text-decoration-line: underline;*/
-     background-color: burlywood;
-     flex-direction: row;
-     
- 
- }
- 
- .highlow{
-     align-self: center;
-     flex-direction: column;
-     
- }
- 
- .sidebar1 {
-     padding-left:40px;
-     
- }
-     
-     
- 
- 
- .franklinimage {
-     width: 100%;
-     align-self: flex-start;
- }
- 
- 
- /*----- Clearfix: Force an Element not to collapse -----*/
- .clearfix:after {
-   content: "";
-   display: table;
-   clear: both; 
- 
- }
-     
- section.forecast { 
-     display: none; 
-
- }
- 
-  /* show the 10-day forecast with the medium view and up */ 
-
-  /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
-
-/*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
