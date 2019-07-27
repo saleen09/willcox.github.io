@@ -290,7 +290,7 @@ footer {
     font-size: 1.6em;
     display: flex;
     border: none;
-    background-color: darkred;
+    background-color: burlywood
     flex-direction: row;
     flex-wrap: wrap;
     text-align: left;
