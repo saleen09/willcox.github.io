@@ -286,24 +286,24 @@ footer {
     padding: 1em 0 1em 0;
 }
 
-.weathersummary {
+.totm {
     font-size: 1.6em;
     display: flex;
     border: 1px;
     background-color: burlywood;
     flex-direction: row;
     flex-wrap: wrap;
-    text-align: right;
+    text-align: left;
     
 
 }
 
 
 
-.weathersummary img {
+.totm img {
     height: auto;
     width: auto;
-    float: right;
+    float: left;
     
     
     }
@@ -313,11 +313,6 @@ footer {
         align-content: center;
         align-self: center;
         
-    }
-
-.franklinimage {
-        width: 100%;
-        align-self: flex-start;
     }
 
 .highlow{
@@ -385,16 +380,13 @@ footer {
 
             display: grid;
             grid-template-columns: 1fr;
-            background-color:burlywood
+            background-color:burlywood;
            
         }
 
-#franklinevents {
-    justify-content: center;
-    display: flex;
-    background-color: grey;
+
     
-}
+
 
 
 
