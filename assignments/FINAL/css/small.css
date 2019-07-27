@@ -290,7 +290,7 @@ footer {
     font-size: 1.6em;
     display: flex;
     border: 1px;
-    background-color: burlywood
+    background-color: burlywood;
     flex-direction: row;
     flex-wrap: wrap;
     text-align: left;
@@ -306,6 +306,13 @@ footer {
     float: right;
     
     
+    }
+
+.sidebar1 {
+        padding-left:40px;
+        align-content: center;
+        align-self: center;
+        
     }
 
 .franklinimage {
