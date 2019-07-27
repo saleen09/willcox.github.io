@@ -67,6 +67,21 @@ nav button {
         margin-left: 4em;
     }
     
+    #tdata {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color:burlywood
+        /*box-shadow: 0 0 50px #333; */
+    }  
+
+    .t-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: burlywood;
+        grid-gap: 50px;
+        }
+        
     section.forecast { 
         justify-content: center;
         align-content: center;

@@ -1,45 +1,21 @@
 {
-  "towns" : [
+  "temples" : [
   {
-    "name": "Pocatello, ID",
-    "address": "3100 Butte Street",
-    "telephone": "509-926-2824",
-    "site": "12.77 acres",
-    "exteriorFinish": "Granite",
-    "ordinanceRoom": "Four ordinance rooms (stationary) and four sealing",
-    "floorArea": "67,696 square feet"
-   
+    "statusP": "Closed",
+
   },
   {
-    "name": "Spokane, ID",
-    "address": "13710 East 40th Avenue ",
-    "telephone": "509-926-2824",
-    "site": "2 acres",
-    "exteriorFinish": "Granite",
-    "ordinanceRoom": "Two ordinance rooms (two-stage progressive) and two sealing",
-    "floorArea": "10,700 square feet"
+    "statusS": "Open",
+  },
+
+  {
+    "statusB": "Open",
 
   },
 
   {
-    "name": "Billings, MT",
-    "address": "3100 Rim Point Drive ",
-    "telephone": "406-655-0607",
-    "site": "10 acres",
-    "exteriorFinish": "Wyoming white dolomite precast concrete",
-    "ordinanceRoom": "Two ordinance rooms (two-stage progressive) and three sealing",
-    "floorArea": "33,800 square feet"
-   
-  },
+    "statusR": "Open",
 
-  {
-    "name": "Rexburg, ID",
-    "address": "750 South 2nd East ",
-    "telephone": "208-656-0880",
-    "site": "10 acres",
-    "exteriorFinish": "Precast concrete panels with white quartz rock finish",
-    "ordinanceRoom": "Four ordinance rooms (two-stage progressive) and five sealing",
-    "floorArea": "57,504 square feet"
   
   }
  ]

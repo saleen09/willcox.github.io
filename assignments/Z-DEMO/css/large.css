@@ -1,5 +1,7 @@
-@media only screen and (min-width: 64em) {
-  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+ /* large and up views */
+
+ @media only screen and (min-width: 775px) {
+
     
     header h1 {
         font-size: 5.5em;
@@ -21,6 +23,11 @@
         align-items: center;
         align-content: center;
     }
+
+    main img {
+        float: right;
+        background-color: #C4DBF6;
+    }
     
     main h2 {
         margin: 0.5em 1.75em 0 1.75em;
@@ -36,6 +43,21 @@
         font-size:1.3em;
     }
     
+    #tdata {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color:burlywood
+        /*box-shadow: 0 0 50px #333; */
+    }  
+
+    .t-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: burlywood;
+        grid-gap: 50px;
+        }
+        
 
     
     table {

@@ -215,7 +215,48 @@ main .sServices {
     text-align: left;
 }
 
+main img {
+    max-width: 100%;
+    margin: auto;
+}
 
+#tdata {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color:burlywood
+    /*box-shadow:0 0 50px #333;*/
+}    
+
+.t-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: burlywood;
+        grid-gap: 50px;
+        }
+        
+.t-container > img {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        
+        }
+
+        #tdata.t1  {
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 5px;
+            padding: 5px;
+            max-width: 100%;
+            margin: auto;
+            background-color: burlywood;
+            border: #000;
+        }
 
 thead {color:black;
     background-color: #7fb989;
@@ -255,11 +296,11 @@ h3 {
     color: #0673BA;
 }
 
-main article p.town-article, p.w-story {
+/*main article p.town-article, p.w-story {
     padding: 0 1em 1em;
     word-spacing: 0.2rem;
     margin-bottom: 0;
-}
+}*/
 
 
 footer {
