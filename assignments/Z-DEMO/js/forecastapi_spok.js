@@ -1,10 +1,10 @@
 
    setTimeout(function(){}, 2000);
-   let forecastRequest = new XMLHttpRequest();
-   forecastRequest.open("GET","https://api.openweathermap.org/data/2.5/forecast?id=5811696&APPID=e3928217ff6074698f148e595b686f23&units=imperial", true);
-   forecastRequest.send();
-   forecastRequest.onload = function () {
-       let forecastData = JSON.parse(forecastRequest.responseText);
+   let forecastRequest2 = new XMLHttpRequest();
+   forecastRequest2.open("GET","https://api.openweathermap.org/data/2.5/forecast?id=5811696&APPID=e3928217ff6074698f148e595b686f23&units=imperial", true);
+   forecastRequest2.send();
+   forecastRequest2.onload = function () {
+       let forecastData = JSON.parse(forecastRequest2.responseText);
        console.log(forecastData);
 
     var fcList = forecastData;

@@ -32,6 +32,14 @@ header {
 
 }
 
+header img {
+    width: 170px;
+    height: auto;
+    float: left;
+    max-width : 100%;
+}
+
+
 nav button {
     margin: .2rem 2%;
     background-color: #cc6600;
@@ -98,12 +106,7 @@ h1 {
     
     
 }
-header img {
-    display: flex;
-    width: 20%;
-    height: auto;
-    
-}
+
 h2 {
     
     color: khaki;
